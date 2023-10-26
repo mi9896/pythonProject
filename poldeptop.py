@@ -4,12 +4,6 @@ import json
 import os
 
 
-
-
-
-
-
-
 def remesting():
     print("Таблица лидеров: ")
     if emeralds > em1:
@@ -68,6 +62,7 @@ def remestingpt():
         print(mes1, MESTPT1, vin1, MESTPT1_1)
         print(mes2, MESTPT2, vin2, MESTPT2_2)
         print(mes3, MESTPT3, vin3, MESTPT3_3)
+
 
 print("1")
 if omer == 0:
@@ -207,6 +202,7 @@ print("kode_mini_plysh2 =", kode_mini_plysh2)
 print("kode_mini_plysh1 =", kode_mini_plysh1)
 print("kode_mini_plysh =", kode_mini_plysh)
 
+
 def pervkart():
     go_player_minimap_ob = codrdinite
     if go_player_minimap_ob == 6:
@@ -240,7 +236,7 @@ def pervkart():
         go_player_minimap_ob_st13 = "🟩"
         go_player_minimap_ob_st8 = "🟦"
     print("🟫🟫🟫🟫")
-    print("🟫" + go_player_minimap_ob_st8 + go_player_minimap_ob_st13 +"🟫")
+    print("🟫" + go_player_minimap_ob_st8 + go_player_minimap_ob_st13 + "🟫")
     print("🟫🟫" + go_player_minimap_ob_st12 + "🟫")
     print("🟫" + go_player_minimap_ob_st6 + go_player_minimap_ob_st11 + "🟫")
     print("🟫🟫🟫🟫")
