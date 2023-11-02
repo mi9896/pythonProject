@@ -242,6 +242,159 @@ def pervkart():
     print("🟫🟫🟫🟫")
 
 
+def shops(magz, mcikl, loc1, loc2, loc3, magpok1, magpok2, magpok3, emeralds, PBox, LBox):
+    if magz > 5:
+        magz = 0
+    print("Добропожаловать в магазин!")
+    while mcikl:
+        print("Что-бы выйти из магазина напишите: 'выход'")
+        if magz == 0:
+            print("Асортимент:")
+            sort = ['AD1', 'Структурный', 'Структурная']
+            if 'Структурная' in DostPersone:
+                if loc1 == 1:
+                    if loc2 == 1:
+                        del sort[0]
+                        magpok3 = 0
+                    elif loc2 == 0:
+                        del sort[1]
+                        magpok3 = 0
+                elif loc1 == 0:
+                    if loc2 == 1:
+                        del sort[1]
+                        magpok3 = 0
+                    elif loc2 == 0:
+                        del sort[2]
+                        magpok3 = 0
+            if 'Структурный' in DostPersone:
+                if loc1 == 1:
+                    if loc3 == 1:
+                        del sort[0]
+                        magpok2 = 0
+                    elif loc3 == 0:
+                        del sort[0]
+                        magpok2 = 0
+                elif loc1 == 0:
+                    if loc3 == 1:
+                        del sort[1]
+                        magpok2 = 0
+                    elif loc3 == 0:
+                        del sort[1]
+                        magpok2 = 0
+            if 'AD1' in DostPersone:
+                if loc2 == 1:
+                    if loc3 == 1:
+                        del sort[0]
+                        magpok1 = 0
+                    elif loc3 == 0:
+                        del sort[0]
+                        magpok1 = 0
+                elif loc2 == 0:
+                    if loc3 == 1:
+                        del sort[0]
+                        magpok1 = 0
+                    elif loc3 == 0:
+                        del sort[0]
+                        magpok1 = 0
+            magBox = ['простой', 'легаси']
+            print("Персонажи:", sort)
+            print("Ящики:", magBox)
+            sobp = input()
+            if sobp == 'AD1':
+                if magpok1 == 1:
+                    print("Выбран:", sobp)
+                    print("Тип персонаж")
+                    print("Цена: ❇️ 230 изумрудов ❇️")
+                    print("Вы покупаете?")
+                    sobp = input()
+                    if sobp == "да":
+                        if emeralds >= 230:
+                            emeralds -= 230
+                            loc1 = 1
+                            DostPersone.append('AD1')
+                            print("Покупка прошла успешно!")
+                            print("Ваше количество изумрудов:", emeralds)
+                        else:
+                            print("У вас недостатачно изумрудов!")
+                    else:
+                        print("Ок")
+            elif sobp == 'Структурный':
+                if magpok2 == 1:
+                    print("Выбран:", sobp)
+                    print("Тип персонаж")
+                    print("Цена: ❇️ 160 изумрудов ❇️")
+                    print("Вы покупаете?")
+                    sobp = input()
+                    if sobp == "да":
+                        if emeralds >= 160:
+                            emeralds -= 160
+                            loc2 = 1
+                            DostPersone.append('Структурный')
+                            print("Покупка прошла успешно!")
+                            print("Ваше количество изумрудов:", emeralds)
+                        else:
+                            print("У вас недостатачно изумрудов!")
+                    else:
+                        print("Ок")
+            elif sobp == 'Структурная':
+                if magpok3 == 1:
+                    print("Выбрана:", sobp)
+                    print("Тип персонаж")
+                    print("Цена: ❇️ 180 изумрудов ❇️")
+                    print("Вы покупаете?")
+                    sobp = input()
+                    if sobp == "да":
+                        if emeralds >= 180:
+                            emeralds -= 180
+                            loc3 = 1
+                            DostPersone.append('Структурная')
+                            print("Покупка прошла успешно!")
+                            print("Ваше количество изумрудов:", emeralds)
+                        else:
+                            print("У вас недостатачно изумрудов!")
+                    else:
+                        print("Ок")
+            elif sobp == "простой":
+                print("Выбран:", sobp)
+                print("Тип ящик")
+                kola = int(input("Количество: "))
+                bzen = 160
+                bzen2 = bzen * kola
+                print("Цена: ❇️", bzen2, "изумрудов ❇️")
+                print("Вы покупаете?")
+                sobp = input()
+                if sobp == "да":
+                    if emeralds >= bzen2:
+                        emeralds -= bzen2
+                        PBox += kola
+                        print("Покупка прошла успешно!")
+                        print("Ваше количество изумрудов:", emeralds)
+                    else:
+                        print("У вас недостатачно изумрудов!")
+                else:
+                    print("Ок")
+            elif sobp == "легаси":
+                print("Выбран:", sobp)
+                print("Тип ящик")
+                kola = int(input("Количество: "))
+                bzen = 200
+                bzen2 = bzen * kola
+                print("Цена: ❇️", bzen2, "изумрудов ❇️")
+                print("Вы покупаете?")
+                sobp = input()
+                if sobp == "да":
+                    if emeralds >= bzen2:
+                        emeralds -= bzen2
+                        LBox += kola
+                        print("Покупка прошла успешно!")
+                        print("Ваше количество изумрудов:", emeralds)
+                    else:
+                        print("У вас недостатачно изумрудов!")
+                else:
+                    print("Ок")
+            elif sobp == "выход":
+                mcikl = False
+
 def liga(MAXtrophei, trophei):
     print("Ваше наивысшее количество трофеев:", MAXtrophei)
     print("Ваше нынешнее количество трофеев:", trophei)
@@ -571,157 +724,7 @@ if signature == "mi97-98lo-g011-rim6":
                 pervonahallives = lives
                 pervonahalWeapon = Weapon
         elif menu == "магазин":
-            if magz > 5:
-                magz = 0
-            print("Добропожаловать в магазин!")
-            while mcikl:
-                print("Что-бы выйти из магазина напишите: 'выход'")
-                if magz == 0:
-                    print("Асортимент:")
-                    sort = ['AD1', 'Структурный', 'Структурная']
-                    if 'Структурная' in DostPersone:
-                        if loc1 == 1:
-                            if loc2 == 1:
-                                del sort[0]
-                                magpok3 = 0
-                            elif loc2 == 0:
-                                del sort[1]
-                                magpok3 = 0
-                        elif loc1 == 0:
-                            if loc2 == 1:
-                                del sort[1]
-                                magpok3 = 0
-                            elif loc2 == 0:
-                                del sort[2]
-                                magpok3 = 0
-                    if 'Структурный' in DostPersone:
-                        if loc1 == 1:
-                            if loc3 == 1:
-                                del sort[0]
-                                magpok2 = 0
-                            elif loc3 == 0:
-                                del sort[0]
-                                magpok2 = 0
-                        elif loc1 == 0:
-                            if loc3 == 1:
-                                del sort[1]
-                                magpok2 = 0
-                            elif loc3 == 0:
-                                del sort[1]
-                                magpok2 = 0
-                    if 'AD1' in DostPersone:
-                        if loc2 == 1:
-                            if loc3 == 1:
-                                del sort[0]
-                                magpok1 = 0
-                            elif loc3 == 0:
-                                del sort[0]
-                                magpok1 = 0
-                        elif loc2 == 0:
-                            if loc3 == 1:
-                                del sort[0]
-                                magpok1 = 0
-                            elif loc3 == 0:
-                                del sort[0]
-                                magpok1 = 0
-                    magBox = ['простой', 'легаси']
-                    print("Персонажи:", sort)
-                    print("Ящики:", magBox)
-                    sobp = input()
-                    if sobp == 'AD1':
-                        if magpok1 == 1:
-                            print("Выбран:", sobp)
-                            print("Тип персонаж")
-                            print("Цена: ❇️ 230 изумрудов ❇️")
-                            print("Вы покупаете?")
-                            sobp = input()
-                            if sobp == "да":
-                                if emeralds >= 230:
-                                    emeralds -= 230
-                                    loc1 = 1
-                                    DostPersone.append('AD1')
-                                    print("Покупка прошла успешно!")
-                                    print("Ваше количество изумрудов:", emeralds)
-                                else:
-                                    print("У вас недостатачно изумрудов!")
-                            else:
-                                print("Ок")
-                    elif sobp == 'Структурный':
-                        if magpok2 == 1:
-                            print("Выбран:", sobp)
-                            print("Тип персонаж")
-                            print("Цена: ❇️ 160 изумрудов ❇️")
-                            print("Вы покупаете?")
-                            sobp = input()
-                            if sobp == "да":
-                                if emeralds >= 160:
-                                    emeralds -= 160
-                                    loc2 = 1
-                                    DostPersone.append('Структурный')
-                                    print("Покупка прошла успешно!")
-                                    print("Ваше количество изумрудов:", emeralds)
-                                else:
-                                    print("У вас недостатачно изумрудов!")
-                            else:
-                                print("Ок")
-                    elif sobp == 'Структурная':
-                        if magpok3 == 1:
-                            print("Выбрана:", sobp)
-                            print("Тип персонаж")
-                            print("Цена: ❇️ 180 изумрудов ❇️")
-                            print("Вы покупаете?")
-                            sobp = input()
-                            if sobp == "да":
-                                if emeralds >= 180:
-                                    emeralds -= 180
-                                    loc3 = 1
-                                    DostPersone.append('Структурная')
-                                    print("Покупка прошла успешно!")
-                                    print("Ваше количество изумрудов:", emeralds)
-                                else:
-                                    print("У вас недостатачно изумрудов!")
-                            else:
-                                print("Ок")
-                    elif sobp == "простой":
-                        print("Выбран:", sobp)
-                        print("Тип ящик")
-                        kola = int(input("Количество: "))
-                        bzen = 160
-                        bzen2 = bzen * kola
-                        print("Цена: ❇️", bzen2, "изумрудов ❇️")
-                        print("Вы покупаете?")
-                        sobp = input()
-                        if sobp == "да":
-                            if emeralds >= bzen2:
-                                emeralds -= bzen2
-                                PBox += kola
-                                print("Покупка прошла успешно!")
-                                print("Ваше количество изумрудов:", emeralds)
-                            else:
-                                print("У вас недостатачно изумрудов!")
-                        else:
-                            print("Ок")
-                    elif sobp == "легаси":
-                        print("Выбран:", sobp)
-                        print("Тип ящик")
-                        kola = int(input("Количество: "))
-                        bzen = 200
-                        bzen2 = bzen * kola
-                        print("Цена: ❇️", bzen2, "изумрудов ❇️")
-                        print("Вы покупаете?")
-                        sobp = input()
-                        if sobp == "да":
-                            if emeralds >= bzen2:
-                                emeralds -= bzen2
-                                LBox += kola
-                                print("Покупка прошла успешно!")
-                                print("Ваше количество изумрудов:", emeralds)
-                            else:
-                                print("У вас недостатачно изумрудов!")
-                        else:
-                            print("Ок")
-                    elif sobp == "выход":
-                        mcikl = False
+            shops(magz, mcikl, loc1, loc2, loc3, magpok1, magpok2, magpok3, emeralds, PBox, LBox)
         elif menu == "лига":
             liga(MAXtrophei, trophei)
 
