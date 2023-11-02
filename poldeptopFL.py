@@ -17,7 +17,7 @@ def save():
 
 load()
 
-print(poldeptopF)
+
 em1 = poldeptopF.get("em1", 234098)
 em2 = poldeptopF.get("em2", 41950)
 em3 = poldeptopF.get("em3", 16998)
