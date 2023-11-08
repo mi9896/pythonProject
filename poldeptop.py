@@ -241,6 +241,438 @@ def pervkart():
     print("🟫" + go_player_minimap_ob_st6 + go_player_minimap_ob_st11 + "🟫")
     print("🟫🟫🟫🟫")
 
+def person(persona, lives, Weapon):
+    print("Доступные персонажи:", DostPersone)
+    print("Персонажи которые есть в игре:", NeDostPersone)
+    persolv = input()
+    if persolv == "Путник":
+        if persona == 1:
+            print("У вас уже выбран этот персонаж!")
+        elif persona != 1:
+            print("Персонаж выбран")
+            persona = 1
+            Weapon = 5
+            lives = 12
+            print("Характеристики:")
+            print("Урон:", Weapon)
+            print("Жизни:", lives)
+    elif persolv == "AD1":
+        if loc1 == 1:
+            if persona == 2:
+                print("У вас уже выбран этот персонаж!")
+            elif persona != 2:
+                print("Персонаж выбран")
+                persona = 2
+                Weapon = 8
+                lives = 17
+                print("Характеристики:")
+                print("Урон:", Weapon)
+                print("Жизни:", lives)
+        else:
+            print("У вас нет данного персонажа!")
+    elif persolv == "Структурный":
+        if loc2 == 1:
+            if persona == 3:
+                print("У вас уже выбран этот персонаж!")
+            elif persona != 3:
+                print("Персонаж выбран")
+                persona = 3
+                Weapon = 6
+                lives = 19
+                print("Характеристики:")
+                print("Урон:", Weapon)
+                print("Жизни:", lives)
+        else:
+            print("У вас нет данного персонажа!")
+    elif persolv == "Структурная":
+        if loc3 == 1:
+            if persona == 4:
+                print("У вас уже выбран этот персонаж!")
+            elif persona != 4:
+                print("Персонаж выбран")
+                persona = 4
+                Weapon = 5
+                lives = 20
+                print("Характеристики:")
+                print("Урон:", Weapon)
+                print("Жизни:", lives)
+        else:
+            print("У вас нет данного персонажа!")
+    elif persolv == "Механический":
+        if loc4 == 1:
+            if persona == 5:
+                print("У вас уже выбран этот персонаж!")
+            elif persona != 5:
+                print("Персонаж выбран")
+                persona = 5
+                Weapon = 8
+                lives = 15
+                print("Характеристики:")
+                print("Урон:", Weapon)
+                print("Жизни:", lives)
+        else:
+            print("У вас нет данного персонажа!")
+    elif persolv == "Нулевой":
+        if loc5 == 1:
+            if persona == 6:
+                print("У вас уже выбран этот персонаж!")
+            elif persona != 6:
+                print("Персонаж выбран")
+                persona = 6
+                Weapon = 10
+                lives = 13
+                print("Характеристики:")
+                print("Урон:", Weapon)
+                print("Жизни:", lives)
+        else:
+            print("У вас нет данного персонажа!")
+    elif persolv == "Тень":
+        if loc6 == 1:
+            if persona == 7:
+                print("У вас уже выбран этот персонаж!")
+            elif persona != 7:
+                print("Персонаж выбран")
+                persona = 7
+                Weapon = 6
+                lives = 22
+                print("Характеристики:")
+                print("Урон:", Weapon)
+                print("Жизни:", lives)
+        else:
+            print("У вас нет данного персонажа!")
+    elif persolv == "Кубер":
+        if loc7 == 1:
+            if persona == 8:
+                print("У вас уже выбран этот персонаж!")
+            elif persona != 8:
+                print("Персонаж выбран")
+                persona = 8
+                Weapon = 12
+                lives = 28
+                print("Характеристики:")
+                print("Урон:", Weapon)
+                print("Жизни:", lives)
+        else:
+            print("У вас нет данного персонажа!")
+    if persolv == persolv:
+        pervonahallives = lives
+        pervonahalWeapon = Weapon
+
+
+def boxes(PBox, LBox, emeralds, loc1, loc2, loc3, loc4, loc5, loc6, loc7):
+    print("Количество ваших простых ящиков:", PBox)
+    print("Количество ваших легаси ящиков:", LBox)
+    print("Будете что-то открывать?")
+    openBox = input()
+    if openBox == "да":
+        print("Что вы будете открывать: 'легаси' ящик или 'простой' ящик?")
+        openBox = input()
+        if openBox == "простой":
+            if PBox > 0:
+                print("Начинаем открытие!")
+                PBox -= 1
+                rrenPBox = random.choice(renPBox)
+                if rrenPBox == 1:
+                    print("Вам выпало: ❇️ 30 изумрудов ❇️")
+                    emeralds += 30
+                elif rrenPBox == 2:
+                    print("Вам выпало: ❇️ 95 изумрудов ❇️")
+                    emeralds += 95
+                elif rrenPBox == 3:
+                    print("Вам выпало: ❇️ 120 изумрудов ❇️")
+                    emeralds += 120
+                elif rrenPBox == 4:
+                    print("Вам выпало: ❇️ 160 изумрудов ❇️")
+                    emeralds += 160
+                elif rrenPBox == 5:
+                    print("Вам выпало: ❇️ 240 изумрудов ❇️")
+                    emeralds += 240
+                elif rrenPBox == 6:
+                    print("Вам выпало: ❇️ 400 изумрудов ❇️")
+                    emeralds += 400
+                elif rrenPBox == 7:
+                    print("Вам выпало: ❇️ 30 изумрудов ❇️")
+                    emeralds += 30
+                elif rrenPBox == 8:
+                    print("Вам выпало: ❇️ 95 изумрудов ❇️")
+                    emeralds += 95
+                elif emeralds == 9:
+                    print("Вам выпало: ❇️ 30 изумрудов ❇️")
+                    emeralds += 30
+                elif rrenPBox == 10:
+                    print("Вам выпало: ❇️ 15 изумрудов ❇️")
+                    emeralds += 15
+                elif rrenPBox == 11:
+                    if loc1 == 1:
+                        if loc2 == 1:
+                            print("Вам выпало: ❇️ 360 изумрудов ❇️")
+                            emeralds += 360
+                        elif loc2 == 0:
+                            print("Вам выпал: Структурный")
+                            loc2 = 1
+                            DostPersone.append('Структурный')
+                            magpok2 = 0
+                    elif loc1 == 0:
+                        print("Вам выпал: AD1")
+                        loc1 = 1
+                        DostPersone.append('AD1')
+                        magpok1 = 0
+                elif rrenPBox == 12:
+                    print("Вам выпало: ❇️ 240 изумрудов ❇️")
+                    emeralds += 240
+                else:
+                    print("ошибка")
+                    emeralds += 160
+            else:
+                print("У вас нету этих ящиков")
+        elif openBox == "легаси":
+            if LBox > 0:
+                print("Начинаем открытие!")
+                LBox -= 1
+                rrenLBox = random.choice(renLBox)
+                if rrenLBox == 1:
+                    print("Вам выпало: ❇️ 100 изумрудов ❇️")
+                    emeralds += 100
+                elif rrenLBox == 2:
+                    print("Вам выпало: ❇️ 240 изумрудов ❇️")
+                    emeralds += 240
+                elif rrenLBox == 3:
+                    print("Вам выпало: ❇️ 100 изумрудов ❇️")
+                    emeralds += 100
+                elif rrenLBox == 4:
+                    if loc1 == 1:
+                        if loc2 == 1:
+                            if loc3 == 1:
+                                if loc4 == 1:
+                                    if loc5 == 1:
+                                        if loc6 == 1:
+                                            if loc7 == 1:
+                                                print("Вам выпало: ❇️ 360 изумрудов ❇️")
+                                                emeralds += 360
+                                            elif loc7 == 0:
+                                                print("Вам выпал: Кубер")
+                                                loc7 = 1
+                                                DostPersone.append('Кубер')
+                                        elif loc6 == 0:
+                                            print("Вам выпал: Тень")
+                                            loc6 = 1
+                                            DostPersone.append('Тень')
+                                    elif loc5 == 0:
+                                        print("Вам выпал: Нулевой")
+                                        loc5 = 1
+                                        DostPersone.append('Нулевой')
+                                elif loc4 == 0:
+                                    print("Вам выпал: Механический")
+                                    loc4 = 1
+                                    DostPersone.append('Механический')
+                            elif loc3 == 0:
+                                print("Вам выпала: Структурная")
+                                loc3 = 1
+                                DostPersone.append('Структурная')
+                                magpok3 = 0
+                        elif loc2 == 0:
+                            print("Вам выпал: Структурный")
+                            loc2 = 1
+                            DostPersone.append('Структурный')
+                            magpok2 = 0
+                    elif loc1 == 0:
+                        print("Вам выпал: AD1")
+                        loc1 = 1
+                        DostPersone.append('AD1')
+                        magpok1 = 0
+                elif rrenLBox == 5:
+                    if loc1 == 1:
+                        if loc2 == 1:
+                            if loc3 == 1:
+                                if loc4 == 1:
+                                    if loc5 == 1:
+                                        if loc6 == 1:
+                                            if loc7 == 1:
+                                                print("Вам выпало: ❇️ 420 изумрудов ❇️")
+                                                emeralds += 420
+                                            elif loc7 == 0:
+                                                print("Вам выпал: Кубер")
+                                                loc7 = 1
+                                                DostPersone.append('Кубер')
+                                        elif loc6 == 0:
+                                            print("Вам выпал: Тень")
+                                            loc6 = 1
+                                            DostPersone.append('Тень')
+                                    elif loc5 == 0:
+                                        print("Вам выпал: Нулевой")
+                                        loc5 = 1
+                                        DostPersone.append('Нулевой')
+                                elif loc4 == 0:
+                                    print("Вам выпал: Механический")
+                                    loc4 = 1
+                                    DostPersone.append('Механический')
+                            elif loc3 == 0:
+                                print("Вам выпала: Структурная")
+                                loc3 = 1
+                                DostPersone.append('Структурная')
+                                magpok3 = 0
+                        elif loc2 == 0:
+                            print("Вам выпал: Структурный")
+                            loc2 = 1
+                            DostPersone.append('Структурный')
+                            magpok2 = 0
+                    elif loc1 == 0:
+                        print("Вам выпал: AD1")
+                        loc1 = 1
+                        DostPersone.append('AD1')
+                        magpok1 = 0
+                elif rrenLBox == 6:
+                    if loc1 == 1:
+                        if loc2 == 1:
+                            if loc3 == 1:
+                                if loc4 == 1:
+                                    if loc5 == 1:
+                                        if loc6 == 1:
+                                            if loc7 == 1:
+                                                print("Вам выпало: ❇️ 480 изумрудов ❇️")
+                                                emeralds += 480
+                                            elif loc7 == 0:
+                                                print("Вам выпал: Кубер")
+                                                loc7 = 1
+                                                DostPersone.append('Кубер')
+                                        elif loc6 == 0:
+                                            print("Вам выпал: Тень")
+                                            loc6 = 1
+                                            DostPersone.append('Тень')
+                                    elif loc5 == 0:
+                                        print("Вам выпал: Нулевой")
+                                        loc5 = 1
+                                        DostPersone.append('Нулевой')
+                                elif loc4 == 0:
+                                    print("Вам выпал: Механический")
+                                    loc4 = 1
+                                    DostPersone.append('Механический')
+                            elif loc3 == 0:
+                                print("Вам выпала: Структурная")
+                                loc3 = 1
+                                DostPersone.append('Структурная')
+                                magpok3 = 0
+                        elif loc2 == 0:
+                            print("Вам выпал: Структурный")
+                            loc2 = 1
+                            DostPersone.append('Структурный')
+                            magpok2 = 0
+                    elif loc1 == 0:
+                        print("Вам выпал: AD1")
+                        loc1 = 1
+                        DostPersone.append('AD1')
+                        magpok1 = 0
+                elif rrenLBox == 7:
+                    if loc1 == 1:
+                        if loc2 == 1:
+                            if loc3 == 1:
+                                if loc4 == 1:
+                                    if loc5 == 1:
+                                        if loc6 == 1:
+                                            if loc7 == 1:
+                                                print("Вам выпало: ❇️ 675 изумрудов ❇️")
+                                                emeralds += 675
+                                            elif loc7 == 0:
+                                                print("Вам выпал: Кубер")
+                                                loc7 = 1
+                                                DostPersone.append('Кубер')
+                                        elif loc6 == 0:
+                                            print("Вам выпал: Тень")
+                                            loc6 = 1
+                                            DostPersone.append('Тень')
+                                    elif loc5 == 0:
+                                        print("Вам выпал: Нулевой")
+                                        loc5 = 1
+                                        DostPersone.append('Нулевой')
+                                elif loc4 == 0:
+                                    print("Вам выпал: Механический")
+                                    loc4 = 1
+                                    DostPersone.append('Механический')
+                            elif loc3 == 0:
+                                print("Вам выпала: Структурная")
+                                loc3 = 1
+                                DostPersone.append('Структурная')
+                                magpok3 = 0
+                        elif loc2 == 0:
+                            print("Вам выпал: Структурный")
+                            loc2 = 1
+                            DostPersone.append('Структурный')
+                            magpok2 = 0
+                    elif loc1 == 0:
+                        print("Вам выпал: AD1")
+                        loc1 = 1
+                        DostPersone.append('AD1')
+                        magpok1 = 0
+                elif rrenLBox == 8:
+                    print("Вам выпало: ❇️ 100 изумрудов ❇️")
+                    emeralds += 100
+                elif rrenLBox == 9:
+                    print("Вам выпало: ❇️ 240 изумрудов ❇️")
+                    emeralds += 240
+                elif rrenLBox == 10:
+                    print("Вам выпало: ❇️ 1375 изумрудов ❇️")
+                    emeralds += 1375
+                elif rrenLBox == 11:
+                    print("Вам выпало: ❇️ 240 изумрудов ❇️")
+                    emeralds += 240
+                elif rrenLBox == 12:
+                    print("Вам выпало: ❇️ 160 изумрудов ❇️")
+                    emeralds += 160
+                elif rrenLBox == 13:
+                    print("Вам выпало: ❇️ 400 изумрудов ❇️")
+                    emeralds += 400
+                elif rrenLBox == 14:
+                    print("Вам выпало: ❇️ 240 изумрудов ❇️")
+                    emeralds += 240
+                elif rrenLBox == 15:
+                    if loc1 == 1:
+                        if loc2 == 1:
+                            if loc3 == 1:
+                                if loc4 == 1:
+                                    if loc5 == 1:
+                                        if loc6 == 1:
+                                            if loc7 == 1:
+                                                print("Вам выпало: ❇️ 985 изумрудов ❇️")
+                                                emeralds += 985
+                                            elif loc7 == 0:
+                                                print("Вам выпал: Кубер")
+                                                loc7 = 1
+                                                DostPersone.append('Кубер')
+                                        elif loc6 == 0:
+                                            print("Вам выпал: Тень")
+                                            loc6 = 1
+                                            DostPersone.append('Тень')
+                                    elif loc5 == 0:
+                                        print("Вам выпал: Нулевой")
+                                        loc5 = 1
+                                        DostPersone.append('Нулевой')
+                                elif loc4 == 0:
+                                    print("Вам выпал: Механический")
+                                    loc4 = 1
+                                    DostPersone.append('Механический')
+                            elif loc3 == 0:
+                                print("Вам выпала: Структурная")
+                                loc3 = 1
+                                DostPersone.append('Структурная')
+                                magpok3 = 0
+                        elif loc2 == 0:
+                            print("Вам выпал: Структурный")
+                            loc2 = 1
+                            DostPersone.append('Структурный')
+                            magpok2 = 0
+                    elif loc1 == 0:
+                        print("Вам выпал: AD1")
+                        loc1 = 1
+                        DostPersone.append('AD1')
+                        magpok1 = 0
+                else:
+                    print("ошибка")
+                    emeralds += 200
+            else:
+                print("У вас нету этих ящиков")
+    elif openBox == "нет":
+        print("Ок")
+
 
 def shops(magz, mcikl, loc1, loc2, loc3, magpok1, magpok2, magpok3, emeralds, PBox, LBox):
     if magz > 5:
@@ -558,7 +990,7 @@ if signature == "mi97-98lo-g011-rim6":
         while name_reg:
             playname = input("Введите свой никнейм:")
             nam_sim = name_simvl(playname, nam_sim)
-            if nam_sim > 3 and nam_sim < 12:
+            if nam_sim >= 3 and nam_sim <= 12:
                 namnem += 1
                 name_reg = False
             elif nam_sim <= 2:
@@ -608,439 +1040,14 @@ if signature == "mi97-98lo-g011-rim6":
             elif ADMINPRAV == 9896:
                 ADMINPRAV -= 9896
         elif menu == "персонажи":
-            print("Доступные персонажи:", DostPersone)
-            print("Персонажи которые есть в игре:", NeDostPersone)
-            persolv = input()
-            if persolv == "Путник":
-                if persona == 1:
-                    print("У вас уже выбран этот персонаж!")
-                elif persona != 1:
-                    print("Персонаж выбран")
-                    persona = 1
-                    Weapon = 5
-                    lives = 12
-                    print("Характеристики:")
-                    print("Урон:", Weapon)
-                    print("Жизни:", lives)
-            elif persolv == "AD1":
-                if loc1 == 1:
-                    if persona == 2:
-                        print("У вас уже выбран этот персонаж!")
-                    elif persona != 2:
-                        print("Персонаж выбран")
-                        persona = 2
-                        Weapon = 8
-                        lives = 17
-                        print("Характеристики:")
-                        print("Урон:", Weapon)
-                        print("Жизни:", lives)
-                else:
-                    print("У вас нет данного персонажа!")
-            elif persolv == "Структурный":
-                if loc2 == 1:
-                    if persona == 3:
-                        print("У вас уже выбран этот персонаж!")
-                    elif persona != 3:
-                        print("Персонаж выбран")
-                        persona = 3
-                        Weapon = 6
-                        lives = 19
-                        print("Характеристики:")
-                        print("Урон:", Weapon)
-                        print("Жизни:", lives)
-                else:
-                    print("У вас нет данного персонажа!")
-            elif persolv == "Структурная":
-                if loc3 == 1:
-                    if persona == 4:
-                        print("У вас уже выбран этот персонаж!")
-                    elif persona != 4:
-                        print("Персонаж выбран")
-                        persona = 4
-                        Weapon = 5
-                        lives = 20
-                        print("Характеристики:")
-                        print("Урон:", Weapon)
-                        print("Жизни:", lives)
-                else:
-                    print("У вас нет данного персонажа!")
-            elif persolv == "Механический":
-                if loc4 == 1:
-                    if persona == 5:
-                        print("У вас уже выбран этот персонаж!")
-                    elif persona != 5:
-                        print("Персонаж выбран")
-                        persona = 5
-                        Weapon = 8
-                        lives = 15
-                        print("Характеристики:")
-                        print("Урон:", Weapon)
-                        print("Жизни:", lives)
-                else:
-                    print("У вас нет данного персонажа!")
-            elif persolv == "Нулевой":
-                if loc5 == 1:
-                    if persona == 6:
-                        print("У вас уже выбран этот персонаж!")
-                    elif persona != 6:
-                        print("Персонаж выбран")
-                        persona = 6
-                        Weapon = 10
-                        lives = 13
-                        print("Характеристики:")
-                        print("Урон:", Weapon)
-                        print("Жизни:", lives)
-                else:
-                    print("У вас нет данного персонажа!")
-            elif persolv == "Тень":
-                if loc6 == 1:
-                    if persona == 7:
-                        print("У вас уже выбран этот персонаж!")
-                    elif persona != 7:
-                        print("Персонаж выбран")
-                        persona = 7
-                        Weapon = 6
-                        lives = 22
-                        print("Характеристики:")
-                        print("Урон:", Weapon)
-                        print("Жизни:", lives)
-                else:
-                    print("У вас нет данного персонажа!")
-            elif persolv == "Кубер":
-                if loc7 == 1:
-                    if persona == 8:
-                        print("У вас уже выбран этот персонаж!")
-                    elif persona != 8:
-                        print("Персонаж выбран")
-                        persona = 8
-                        Weapon = 12
-                        lives = 28
-                        print("Характеристики:")
-                        print("Урон:", Weapon)
-                        print("Жизни:", lives)
-                else:
-                    print("У вас нет данного персонажа!")
-            if persolv == persolv:
-                pervonahallives = lives
-                pervonahalWeapon = Weapon
+            person(persona, lives, Weapon)
         elif menu == "магазин":
             shops(magz, mcikl, loc1, loc2, loc3, magpok1, magpok2, magpok3, emeralds, PBox, LBox)
         elif menu == "лига":
             liga(MAXtrophei, trophei)
 
         elif menu == "ящики":
-            print("Количество ваших простых ящиков:", PBox)
-            print("Количество ваших легаси ящиков:", LBox)
-            print("Будете что-то открывать?")
-            openBox = input()
-            if openBox == "да":
-                print("Что вы будете открывать: 'легаси' ящик или 'простой' ящик?")
-                openBox = input()
-                if openBox == "простой":
-                    if PBox > 0:
-                        print("Начинаем открытие!")
-                        PBox -= 1
-                        rrenPBox = random.choice(renPBox)
-                        if rrenPBox == 1:
-                            print("Вам выпало: ❇️ 30 изумрудов ❇️")
-                            emeralds += 30
-                        elif rrenPBox == 2:
-                            print("Вам выпало: ❇️ 95 изумрудов ❇️")
-                            emeralds += 95
-                        elif rrenPBox == 3:
-                            print("Вам выпало: ❇️ 120 изумрудов ❇️")
-                            emeralds += 120
-                        elif rrenPBox == 4:
-                            print("Вам выпало: ❇️ 160 изумрудов ❇️")
-                            emeralds += 160
-                        elif rrenPBox == 5:
-                            print("Вам выпало: ❇️ 240 изумрудов ❇️")
-                            emeralds += 240
-                        elif rrenPBox == 6:
-                            print("Вам выпало: ❇️ 400 изумрудов ❇️")
-                            emeralds += 400
-                        elif rrenPBox == 7:
-                            print("Вам выпало: ❇️ 30 изумрудов ❇️")
-                            emeralds += 30
-                        elif rrenPBox == 8:
-                            print("Вам выпало: ❇️ 95 изумрудов ❇️")
-                            emeralds += 95
-                        elif emeralds == 9:
-                            print("Вам выпало: ❇️ 30 изумрудов ❇️")
-                            emeralds += 30
-                        elif rrenPBox == 10:
-                            print("Вам выпало: ❇️ 15 изумрудов ❇️")
-                            emeralds += 15
-                        elif rrenPBox == 11:
-                            if loc1 == 1:
-                                if loc2 == 1:
-                                    print("Вам выпало: ❇️ 360 изумрудов ❇️")
-                                    emeralds += 360
-                                elif loc2 == 0:
-                                    print("Вам выпал: Структурный")
-                                    loc2 = 1
-                                    DostPersone.append('Структурный')
-                                    magpok2 = 0
-                            elif loc1 == 0:
-                                print("Вам выпал: AD1")
-                                loc1 = 1
-                                DostPersone.append('AD1')
-                                magpok1 = 0
-                        elif rrenPBox == 12:
-                            print("Вам выпало: ❇️ 240 изумрудов ❇️")
-                            emeralds += 240
-                        else:
-                            print("ошибка")
-                            emeralds += 160
-                    else:
-                        print("У вас нету этих ящиков")
-                elif openBox == "легаси":
-                    if LBox > 0:
-                        print("Начинаем открытие!")
-                        LBox -= 1
-                        rrenLBox = random.choice(renLBox)
-                        if rrenLBox == 1:
-                            print("Вам выпало: ❇️ 100 изумрудов ❇️")
-                            emeralds += 100
-                        elif rrenLBox == 2:
-                            print("Вам выпало: ❇️ 240 изумрудов ❇️")
-                            emeralds += 240
-                        elif rrenLBox == 3:
-                            print("Вам выпало: ❇️ 100 изумрудов ❇️")
-                            emeralds += 100
-                        elif rrenLBox == 4:
-                            if loc1 == 1:
-                                if loc2 == 1:
-                                    if loc3 == 1:
-                                        if loc4 == 1:
-                                            if loc5 == 1:
-                                                if loc6 == 1:
-                                                    if loc7 == 1:
-                                                        print("Вам выпало: ❇️ 360 изумрудов ❇️")
-                                                        emeralds += 360
-                                                    elif loc7 == 0:
-                                                        print("Вам выпал: Кубер")
-                                                        loc7 = 1
-                                                        DostPersone.append('Кубер')
-                                                elif loc6 == 0:
-                                                    print("Вам выпал: Тень")
-                                                    loc6 = 1
-                                                    DostPersone.append('Тень')
-                                            elif loc5 == 0:
-                                                print("Вам выпал: Нулевой")
-                                                loc5 = 1
-                                                DostPersone.append('Нулевой')
-                                        elif loc4 == 0:
-                                            print("Вам выпал: Механический")
-                                            loc4 = 1
-                                            DostPersone.append('Механический')
-                                    elif loc3 == 0:
-                                        print("Вам выпала: Структурная")
-                                        loc3 = 1
-                                        DostPersone.append('Структурная')
-                                        magpok3 = 0
-                                elif loc2 == 0:
-                                    print("Вам выпал: Структурный")
-                                    loc2 = 1
-                                    DostPersone.append('Структурный')
-                                    magpok2 = 0
-                            elif loc1 == 0:
-                                print("Вам выпал: AD1")
-                                loc1 = 1
-                                DostPersone.append('AD1')
-                                magpok1 = 0
-                        elif rrenLBox == 5:
-                            if loc1 == 1:
-                                if loc2 == 1:
-                                    if loc3 == 1:
-                                        if loc4 == 1:
-                                            if loc5 == 1:
-                                                if loc6 == 1:
-                                                    if loc7 == 1:
-                                                        print("Вам выпало: ❇️ 420 изумрудов ❇️")
-                                                        emeralds += 420
-                                                    elif loc7 == 0:
-                                                        print("Вам выпал: Кубер")
-                                                        loc7 = 1
-                                                        DostPersone.append('Кубер')
-                                                elif loc6 == 0:
-                                                    print("Вам выпал: Тень")
-                                                    loc6 = 1
-                                                    DostPersone.append('Тень')
-                                            elif loc5 == 0:
-                                                print("Вам выпал: Нулевой")
-                                                loc5 = 1
-                                                DostPersone.append('Нулевой')
-                                        elif loc4 == 0:
-                                            print("Вам выпал: Механический")
-                                            loc4 = 1
-                                            DostPersone.append('Механический')
-                                    elif loc3 == 0:
-                                        print("Вам выпала: Структурная")
-                                        loc3 = 1
-                                        DostPersone.append('Структурная')
-                                        magpok3 = 0
-                                elif loc2 == 0:
-                                    print("Вам выпал: Структурный")
-                                    loc2 = 1
-                                    DostPersone.append('Структурный')
-                                    magpok2 = 0
-                            elif loc1 == 0:
-                                print("Вам выпал: AD1")
-                                loc1 = 1
-                                DostPersone.append('AD1')
-                                magpok1 = 0
-                        elif rrenLBox == 6:
-                            if loc1 == 1:
-                                if loc2 == 1:
-                                    if loc3 == 1:
-                                        if loc4 == 1:
-                                            if loc5 == 1:
-                                                if loc6 == 1:
-                                                    if loc7 == 1:
-                                                        print("Вам выпало: ❇️ 480 изумрудов ❇️")
-                                                        emeralds += 480
-                                                    elif loc7 == 0:
-                                                        print("Вам выпал: Кубер")
-                                                        loc7 = 1
-                                                        DostPersone.append('Кубер')
-                                                elif loc6 == 0:
-                                                    print("Вам выпал: Тень")
-                                                    loc6 = 1
-                                                    DostPersone.append('Тень')
-                                            elif loc5 == 0:
-                                                print("Вам выпал: Нулевой")
-                                                loc5 = 1
-                                                DostPersone.append('Нулевой')
-                                        elif loc4 == 0:
-                                            print("Вам выпал: Механический")
-                                            loc4 = 1
-                                            DostPersone.append('Механический')
-                                    elif loc3 == 0:
-                                        print("Вам выпала: Структурная")
-                                        loc3 = 1
-                                        DostPersone.append('Структурная')
-                                        magpok3 = 0
-                                elif loc2 == 0:
-                                    print("Вам выпал: Структурный")
-                                    loc2 = 1
-                                    DostPersone.append('Структурный')
-                                    magpok2 = 0
-                            elif loc1 == 0:
-                                print("Вам выпал: AD1")
-                                loc1 = 1
-                                DostPersone.append('AD1')
-                                magpok1 = 0
-                        elif rrenLBox == 7:
-                            if loc1 == 1:
-                                if loc2 == 1:
-                                    if loc3 == 1:
-                                        if loc4 == 1:
-                                            if loc5 == 1:
-                                                if loc6 == 1:
-                                                    if loc7 == 1:
-                                                        print("Вам выпало: ❇️ 675 изумрудов ❇️")
-                                                        emeralds += 675
-                                                    elif loc7 == 0:
-                                                        print("Вам выпал: Кубер")
-                                                        loc7 = 1
-                                                        DostPersone.append('Кубер')
-                                                elif loc6 == 0:
-                                                    print("Вам выпал: Тень")
-                                                    loc6 = 1
-                                                    DostPersone.append('Тень')
-                                            elif loc5 == 0:
-                                                print("Вам выпал: Нулевой")
-                                                loc5 = 1
-                                                DostPersone.append('Нулевой')
-                                        elif loc4 == 0:
-                                            print("Вам выпал: Механический")
-                                            loc4 = 1
-                                            DostPersone.append('Механический')
-                                    elif loc3 == 0:
-                                        print("Вам выпала: Структурная")
-                                        loc3 = 1
-                                        DostPersone.append('Структурная')
-                                        magpok3 = 0
-                                elif loc2 == 0:
-                                    print("Вам выпал: Структурный")
-                                    loc2 = 1
-                                    DostPersone.append('Структурный')
-                                    magpok2 = 0
-                            elif loc1 == 0:
-                                print("Вам выпал: AD1")
-                                loc1 = 1
-                                DostPersone.append('AD1')
-                                magpok1 = 0
-                        elif rrenLBox == 8:
-                            print("Вам выпало: ❇️ 100 изумрудов ❇️")
-                            emeralds += 100
-                        elif rrenLBox == 9:
-                            print("Вам выпало: ❇️ 240 изумрудов ❇️")
-                            emeralds += 240
-                        elif rrenLBox == 10:
-                            print("Вам выпало: ❇️ 1375 изумрудов ❇️")
-                            emeralds += 1375
-                        elif rrenLBox == 11:
-                            print("Вам выпало: ❇️ 240 изумрудов ❇️")
-                            emeralds += 240
-                        elif rrenLBox == 12:
-                            print("Вам выпало: ❇️ 160 изумрудов ❇️")
-                            emeralds += 160
-                        elif rrenLBox == 13:
-                            print("Вам выпало: ❇️ 400 изумрудов ❇️")
-                            emeralds += 400
-                        elif rrenLBox == 14:
-                            print("Вам выпало: ❇️ 240 изумрудов ❇️")
-                            emeralds += 240
-                        elif rrenLBox == 15:
-                            if loc1 == 1:
-                                if loc2 == 1:
-                                    if loc3 == 1:
-                                        if loc4 == 1:
-                                            if loc5 == 1:
-                                                if loc6 == 1:
-                                                    if loc7 == 1:
-                                                        print("Вам выпало: ❇️ 985 изумрудов ❇️")
-                                                        emeralds += 985
-                                                    elif loc7 == 0:
-                                                        print("Вам выпал: Кубер")
-                                                        loc7 = 1
-                                                        DostPersone.append('Кубер')
-                                                elif loc6 == 0:
-                                                    print("Вам выпал: Тень")
-                                                    loc6 = 1
-                                                    DostPersone.append('Тень')
-                                            elif loc5 == 0:
-                                                print("Вам выпал: Нулевой")
-                                                loc5 = 1
-                                                DostPersone.append('Нулевой')
-                                        elif loc4 == 0:
-                                            print("Вам выпал: Механический")
-                                            loc4 = 1
-                                            DostPersone.append('Механический')
-                                    elif loc3 == 0:
-                                        print("Вам выпала: Структурная")
-                                        loc3 = 1
-                                        DostPersone.append('Структурная')
-                                        magpok3 = 0
-                                elif loc2 == 0:
-                                    print("Вам выпал: Структурный")
-                                    loc2 = 1
-                                    DostPersone.append('Структурный')
-                                    magpok2 = 0
-                            elif loc1 == 0:
-                                print("Вам выпал: AD1")
-                                loc1 = 1
-                                DostPersone.append('AD1')
-                                magpok1 = 0
-                        else:
-                            print("ошибка")
-                            emeralds += 200
-                    else:
-                        print("У вас нету этих ящиков")
-            elif openBox == "нет":
-                print("Ок")
+            boxes(PBox, LBox, emeralds, loc1, loc2, loc3, loc4, loc5, loc6, loc7)
         elif menu == "промокоды":
             print("Введите промокод если он у вас есть:")
             prom = input()
