@@ -2,7 +2,10 @@ import random
 from poldeptopFL import *
 import json
 import os
-
+# emeralds = 100
+# PBox = 0
+# LBox = 0
+# persona = 1
 
 def remesting():
     print("Таблица лидеров: ")
@@ -241,7 +244,8 @@ def pervkart():
     print("🟫" + go_player_minimap_ob_st6 + go_player_minimap_ob_st11 + "🟫")
     print("🟫🟫🟫🟫")
 
-def person(persona, lives, Weapon):
+def person(lives, Weapon):
+    global persona, pervonahallives, pervonahalWeapon
     print("Доступные персонажи:", DostPersone)
     print("Персонажи которые есть в игре:", NeDostPersone)
     persolv = input()
@@ -359,7 +363,8 @@ def person(persona, lives, Weapon):
         pervonahalWeapon = Weapon
 
 
-def boxes(PBox, LBox, emeralds, loc1, loc2, loc3, loc4, loc5, loc6, loc7):
+def boxes():
+    global emeralds, PBox, LBox, loc2, loc1, loc3, loc4, loc5, loc6, loc7, magpok1, magpok2, magpok3
     print("Количество ваших простых ящиков:", PBox)
     print("Количество ваших легаси ящиков:", LBox)
     print("Будете что-то открывать?")
@@ -372,6 +377,7 @@ def boxes(PBox, LBox, emeralds, loc1, loc2, loc3, loc4, loc5, loc6, loc7):
                 print("Начинаем открытие!")
                 PBox -= 1
                 rrenPBox = random.choice(renPBox)
+                print("ошибка1")
                 if rrenPBox == 1:
                     print("Вам выпало: ❇️ 30 изумрудов ❇️")
                     emeralds += 30
@@ -674,7 +680,8 @@ def boxes(PBox, LBox, emeralds, loc1, loc2, loc3, loc4, loc5, loc6, loc7):
         print("Ок")
 
 
-def shops(magz, mcikl, loc1, loc2, loc3, magpok1, magpok2, magpok3, emeralds, PBox, LBox):
+def shops(magz, mcikl, loc1, loc2, loc3, magpok1, magpok2, magpok3):
+    global emeralds, PBox, LBox
     if magz > 5:
         magz = 0
     print("Добропожаловать в магазин!")
@@ -826,6 +833,7 @@ def shops(magz, mcikl, loc1, loc2, loc3, magpok1, magpok2, magpok3, emeralds, PB
                     print("Ок")
             elif sobp == "выход":
                 mcikl = False
+
 
 def liga(MAXtrophei, trophei):
     print("Ваше наивысшее количество трофеев:", MAXtrophei)
@@ -1040,14 +1048,14 @@ if signature == "mi97-98lo-g011-rim6":
             elif ADMINPRAV == 9896:
                 ADMINPRAV -= 9896
         elif menu == "персонажи":
-            person(persona, lives, Weapon)
+            person(lives, Weapon)
         elif menu == "магазин":
-            shops(magz, mcikl, loc1, loc2, loc3, magpok1, magpok2, magpok3, emeralds, PBox, LBox)
+            shops(magz, mcikl, loc1, loc2, loc3, magpok1, magpok2, magpok3)
         elif menu == "лига":
             liga(MAXtrophei, trophei)
 
         elif menu == "ящики":
-            boxes(PBox, LBox, emeralds, loc1, loc2, loc3, loc4, loc5, loc6, loc7)
+            boxes()
         elif menu == "промокоды":
             print("Введите промокод если он у вас есть:")
             prom = input()
