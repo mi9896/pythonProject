@@ -122,6 +122,13 @@
   "kode_mini_plysh4" : "",
   "kode_mini_plysh5" : "",
   "kode_mini_plysh6" : "",
+  "mipl6" : 0,
+  "mipl5" : 0,
+  "mipl4" : 0,
+  "mipl3" : 0,
+  "mipl2" : 0,
+  "mipl1" : 0,
+  "mipl" : 0,
 
   "go_player_minimap_ob_st6" : "",
   "go_player_minimap_ob_st11" : "",
@@ -132,5 +139,5 @@
   "free23" : 0,
   "HALVA_VC" : 0,
   "lapota" : 0,
-  "version" : "1.4.9"
+  "version" : "1.5.8-A"
 }

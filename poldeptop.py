@@ -67,7 +67,7 @@ def remestingpt():
         print(mes3, MESTPT3, vin3, MESTPT3_3)
 
 
-print("1")
+print("9%")
 if omer == 0:
     I1 = ['w', 'D', 'F', 'g', 'H', 'u', 'Y', 't', 'I', 'P', 'o', 'm', 'M', 'u', 'q', 'c', 'J', 'E', 'x', 'L']
     I2 = ['1', '0', '2', '3', '4', '5', '6', '7', '8', '9']
@@ -87,10 +87,10 @@ if omer == 0:
     Id14 = random.choice(I2)
     IdifendIp = Id1 + Id2 + Id3 + "-" + Id4 + Id5 + Id6 + "-" + Id7 + Id8 + Id9 + Id10 + "-" + Id11 + Id12 + Id13 + "-" + Id14
     omer += 1
-print("2")
+print("14%")
 
 if omer == 1:
-    print("3")
+    print("15%")
     Id3Id = {"1": "9", "0": "8", "2": "7", "3": "6", "4": "5", "5": "4", "6": "3", "7": "2", "8": "0", "9": "1"}
     for i in Id3Id:
         if Id3 == i:
@@ -115,6 +115,7 @@ if omer == 1:
         kode_mini_plysh2 = "U"
     elif Id5 == "9":
         kode_mini_plysh2 = "H"
+    print("19%")
     if Id6 == "1":
         kode_mini_plysh3 = "l"
     elif Id6 == "0":
@@ -135,6 +136,7 @@ if omer == 1:
         kode_mini_plysh3 = "u"
     elif Id6 == "9":
         kode_mini_plysh3 = "u"
+    print("23%")
     if Id7 == "1":
         kode_mini_plysh4 = "u"
     elif Id7 == "0":
@@ -155,6 +157,7 @@ if omer == 1:
         kode_mini_plysh4 = "u"
     elif Id7 == "9":
         kode_mini_plysh4 = "u"
+    print("27%")
     if Id14 == "1":
         kode_mini_plysh5 = "s"
     elif Id14 == "0":
@@ -195,15 +198,44 @@ if omer == 1:
         kode_mini_plysh6 = "s"
     elif Id14 == "9":
         kode_mini_plysh6 = "s"
+    print("30%")
     kode_mini_plysh = kode_mini_plysh1 + "-" + kode_mini_plysh2 + kode_mini_plysh3 + kode_mini_plysh4 + kode_mini_plysh5 + kode_mini_plysh6
     omer += 1
-print("kode_mini_plysh6 =", kode_mini_plysh6)
-print("kode_mini_plysh5 =", kode_mini_plysh5)
-print("kode_mini_plysh4 =", kode_mini_plysh4)
-print("kode_mini_plysh3 =", kode_mini_plysh3)
-print("kode_mini_plysh2 =", kode_mini_plysh2)
-print("kode_mini_plysh1 =", kode_mini_plysh1)
-print("kode_mini_plysh =", kode_mini_plysh)
+
+
+def miniplush():
+    if kode_mini_plysh6 != "":
+        print("kode_mini_plysh6 = *")
+        if kode_mini_plysh5 != "":
+            print("kode_mini_plysh5 = *")
+            if kode_mini_plysh4 != "":
+                print("kode_mini_plysh4 = *")
+                if kode_mini_plysh3 != "":
+                    print("kode_mini_plysh3 = *")
+                    if kode_mini_plysh2 != "":
+                        print("kode_mini_plysh2 = *")
+                        if kode_mini_plysh1 != "":
+                            print("kode_mini_plysh1 = *")
+                            if kode_mini_plysh != "":
+                                print("kode_mini_plysh = *")
+                            else:
+                                print("ошибка: 7")
+                        else:
+                            print("ошибка: 6")
+                    else:
+                        print("ошибка: 5")
+                else:
+                    print("ошибка: 4")
+            else:
+                print("ошибка: 3")
+        else:
+            print("ошибка: 2")
+    else:
+        print("ошибка: 1")
+
+
+miniplush()
+print("34%")
 
 
 def pervkart():
@@ -363,8 +395,11 @@ def person(lives, Weapon):
         pervonahalWeapon = Weapon
 
 
+print("37%")
+
+
 def boxes():
-    global emeralds, PBox, LBox, loc2, loc1, loc3, loc4, loc5, loc6, loc7, magpok1, magpok2, magpok3
+    global emeralds, PBox, LBox, loc2, loc1, loc3, loc4, loc5, loc6, loc7, magpok1, magpok2, magpok3, renPBox
     print("Количество ваших простых ящиков:", PBox)
     print("Количество ваших легаси ящиков:", LBox)
     print("Будете что-то открывать?")
@@ -377,7 +412,7 @@ def boxes():
                 print("Начинаем открытие!")
                 PBox -= 1
                 rrenPBox = random.choice(renPBox)
-                print("ошибка1")
+                print("сл.д.1")
                 if rrenPBox == 1:
                     print("Вам выпало: ❇️ 30 изумрудов ❇️")
                     emeralds += 30
@@ -680,8 +715,8 @@ def boxes():
         print("Ок")
 
 
-def shops(magz, mcikl, loc1, loc2, loc3, magpok1, magpok2, magpok3):
-    global emeralds, PBox, LBox
+def shops(magz, mcikl, loc1, loc2, loc3):
+    global emeralds, PBox, LBox, magpok1, magpok2, magpok3
     if magz > 5:
         magz = 0
     print("Добропожаловать в магазин!")
@@ -740,59 +775,11 @@ def shops(magz, mcikl, loc1, loc2, loc3, magpok1, magpok2, magpok3):
             print("Ящики:", magBox)
             sobp = input()
             if sobp == 'AD1':
-                if magpok1 == 1:
-                    print("Выбран:", sobp)
-                    print("Тип персонаж")
-                    print("Цена: ❇️ 230 изумрудов ❇️")
-                    print("Вы покупаете?")
-                    sobp = input()
-                    if sobp == "да":
-                        if emeralds >= 230:
-                            emeralds -= 230
-                            loc1 = 1
-                            DostPersone.append('AD1')
-                            print("Покупка прошла успешно!")
-                            print("Ваше количество изумрудов:", emeralds)
-                        else:
-                            print("У вас недостатачно изумрудов!")
-                    else:
-                        print("Ок")
+                ad1()
             elif sobp == 'Структурный':
-                if magpok2 == 1:
-                    print("Выбран:", sobp)
-                    print("Тип персонаж")
-                    print("Цена: ❇️ 160 изумрудов ❇️")
-                    print("Вы покупаете?")
-                    sobp = input()
-                    if sobp == "да":
-                        if emeralds >= 160:
-                            emeralds -= 160
-                            loc2 = 1
-                            DostPersone.append('Структурный')
-                            print("Покупка прошла успешно!")
-                            print("Ваше количество изумрудов:", emeralds)
-                        else:
-                            print("У вас недостатачно изумрудов!")
-                    else:
-                        print("Ок")
+                stryktyr()
             elif sobp == 'Структурная':
-                if magpok3 == 1:
-                    print("Выбрана:", sobp)
-                    print("Тип персонаж")
-                    print("Цена: ❇️ 180 изумрудов ❇️")
-                    print("Вы покупаете?")
-                    sobp = input()
-                    if sobp == "да":
-                        if emeralds >= 180:
-                            emeralds -= 180
-                            loc3 = 1
-                            DostPersone.append('Структурная')
-                            print("Покупка прошла успешно!")
-                            print("Ваше количество изумрудов:", emeralds)
-                        else:
-                            print("У вас недостатачно изумрудов!")
-                    else:
-                        print("Ок")
+                stryktyrna()
             elif sobp == "простой":
                 print("Выбран:", sobp)
                 print("Тип ящик")
@@ -833,6 +820,69 @@ def shops(magz, mcikl, loc1, loc2, loc3, magpok1, magpok2, magpok3):
                     print("Ок")
             elif sobp == "выход":
                 mcikl = False
+
+
+def ad1():
+    global emeralds, loc1, sobp
+    if magpok1 == 1:
+        print("Выбран:", sobp)
+        print("Тип персонаж")
+        print("Цена: ❇️ 230 изумрудов ❇️")
+        print("Вы покупаете?")
+        sobp = input()
+        if sobp == "да":
+            if emeralds >= 230:
+                emeralds -= 230
+                loc1 = 1
+                DostPersone.append('AD1')
+                print("Покупка прошла успешно!")
+                print("Ваше количество изумрудов:", emeralds)
+            else:
+                print("У вас недостатачно изумрудов!")
+        else:
+            print("Ок")
+
+
+def stryktyr():
+    global emeralds, loc2, sobp
+    if magpok2 == 1:
+        print("Выбран:", sobp)
+        print("Тип персонаж")
+        print("Цена: ❇️ 160 изумрудов ❇️")
+        print("Вы покупаете?")
+        sobp = input()
+        if sobp == "да":
+            if emeralds >= 160:
+                emeralds -= 160
+                loc2 = 1
+                DostPersone.append('Структурный')
+                print("Покупка прошла успешно!")
+                print("Ваше количество изумрудов:", emeralds)
+            else:
+                print("У вас недостатачно изумрудов!")
+        else:
+            print("Ок")
+
+
+def stryktyrna():
+    global emeralds, loc3, sobp
+    if magpok3 == 1:
+        print("Выбрана:", sobp)
+        print("Тип персонаж")
+        print("Цена: ❇️ 180 изумрудов ❇️")
+        print("Вы покупаете?")
+        sobp = input()
+        if sobp == "да":
+            if emeralds >= 180:
+                emeralds -= 180
+                loc3 = 1
+                DostPersone.append('Структурная')
+                print("Покупка прошла успешно!")
+                print("Ваше количество изумрудов:", emeralds)
+            else:
+                print("У вас недостатачно изумрудов!")
+        else:
+            print("Ок")
 
 
 def liga(MAXtrophei, trophei):
@@ -1005,13 +1055,13 @@ if signature == "mi97-98lo-g011-rim6":
                 print("Ваше имя пользователя недопустимо!"
                       "\nВедь оно состоит из:", nam_sim, "символов \nИ противоречит правилам: "
                                                          "имя пользователя недолжно превышать 12 символов и быть меньше"
-                                                         "3 символов!")
+                                                         " 3 символов!")
                 print("Так что пожалуйста введите имя пользователя заново! :)")
             elif nam_sim > 12:
                 print("Ваше имя пользователя недопустимо!"
                       "\nВедь оно состоит из:", nam_sim, "символов \nИ противоречит правилам: "
                                                          "имя пользователя недолжно превышать 12 символов и быть меньше"
-                                                         "3 символов!")
+                                                         " 3 символов!")
                 print("Так что пожалуйста введите имя пользователя заново")
     while True:
         mcikl = True
@@ -1050,7 +1100,7 @@ if signature == "mi97-98lo-g011-rim6":
         elif menu == "персонажи":
             person(lives, Weapon)
         elif menu == "магазин":
-            shops(magz, mcikl, loc1, loc2, loc3, magpok1, magpok2, magpok3)
+            shops(magz, mcikl, loc1, loc2, loc3)
         elif menu == "лига":
             liga(MAXtrophei, trophei)
 
@@ -1219,7 +1269,7 @@ if signature == "mi97-98lo-g011-rim6":
                         print("Ваша награда: 1 легаси ящик")
                         print("              + 2 трофея")
                         trophei += 2
-                        yrproff += 0.8
+                        yrproff += 0.6
                         LBox += 1
                         mtik1 -= 5
                         mcikl = False

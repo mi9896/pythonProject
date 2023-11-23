@@ -135,6 +135,7 @@ dorstkvazvaniy = poldeptopF.get("dorstkvazvaniy", 0)
 prom = poldeptopF.get("prom", "")
 menu = poldeptopF.get("menu", "")
 comandexpi = poldeptopF.get("comandexpi", "")
+sobp = ""
 
 
 # ограниченое количество символов имени
@@ -151,6 +152,13 @@ kode_mini_plysh3 = poldeptopF.get("kode_mini_plysh3", "")
 kode_mini_plysh4 = poldeptopF.get("kode_mini_plysh4", "")
 kode_mini_plysh5 = poldeptopF.get("kode_mini_plysh5", "")
 kode_mini_plysh6 = poldeptopF.get("kode_mini_plysh6", "")
+mipl6 = poldeptopF.get("mipl6", 0)
+mipl5 = poldeptopF.get("mipl5", 0)
+mipl4 = poldeptopF.get("mipl4", 0)
+mipl3 = poldeptopF.get("mipl3", 0)
+mipl2 = poldeptopF.get("mipl2", 0)
+mipl1 = poldeptopF.get("mipl1", 0)
+mipl = poldeptopF.get("mipl", 0)
 # мини-плюшка!
 # фукции:
 
@@ -181,7 +189,7 @@ go_player_minimap_ob_st8 = poldeptopF.get("go_player_minimap_ob_st8", "")
 free23 = poldeptopF.get("free23", 0)
 HALVA_VC = poldeptopF.get("HALVA_VC", 0)
 lapota = poldeptopF.get("lapota", 0)
-version = poldeptopF.get("version", "1.4.9")
+version = poldeptopF.get("version", "1.5.8-A")
 # free23
 # HALVA_VC
 # lapota
