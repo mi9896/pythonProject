@@ -95,111 +95,33 @@ if omer == 1:
     for i in Id3Id:
         if Id3 == i:
             kode_mini_plysh1 = Id3Id[i]
-    if Id5 == "1":
-        kode_mini_plysh2 = "P"
-    elif Id5 == "0":
-        kode_mini_plysh2 = "D"
-    elif Id5 == "2":
-        kode_mini_plysh2 = "O"
-    elif Id5 == "3":
-        kode_mini_plysh2 = "F"
-    elif Id5 == "4":
-        kode_mini_plysh2 = "I"
-    elif Id5 == "5":
-        kode_mini_plysh2 = "G"
-    elif Id5 == "6":
-        kode_mini_plysh2 = "U"
-    elif Id5 == "7":
-        kode_mini_plysh2 = "H"
-    elif Id5 == "8":
-        kode_mini_plysh2 = "U"
-    elif Id5 == "9":
-        kode_mini_plysh2 = "H"
+    Id5Id = {"1": "P", "0": "D", "2": "O", "3": "F", "4": "I", "5": "G", "6": "U", "7": "H", "8": "U", "9": "H"}
+    for i in Id5Id:
+        if Id5 == i:
+            kode_mini_plysh2 = Id5Id[i]
     print("19%")
-    if Id6 == "1":
-        kode_mini_plysh3 = "l"
-    elif Id6 == "0":
-        kode_mini_plysh3 = "l"
-    elif Id6 == "2":
-        kode_mini_plysh3 = "s"
-    elif Id6 == "3":
-        kode_mini_plysh3 = "f"
-    elif Id6 == "4":
-        kode_mini_plysh3 = "i"
-    elif Id6 == "5":
-        kode_mini_plysh3 = "h"
-    elif Id6 == "6":
-        kode_mini_plysh3 = "d"
-    elif Id6 == "7":
-        kode_mini_plysh3 = "l"
-    elif Id6 == "8":
-        kode_mini_plysh3 = "u"
-    elif Id6 == "9":
-        kode_mini_plysh3 = "u"
+    Id6Id = {"1": "l", "0": "l", "2": "s", "3": "f", "4": "i", "5": "h", "6": "d", "7": "l", "8": "u", "9": "u"}
+    for i in Id6Id:
+        if Id6 == i:
+            kode_mini_plysh3 = Id6Id[i]
     print("23%")
-    if Id7 == "1":
-        kode_mini_plysh4 = "u"
-    elif Id7 == "0":
-        kode_mini_plysh4 = "u"
-    elif Id7 == "2":
-        kode_mini_plysh4 = "s"
-    elif Id7 == "3":
-        kode_mini_plysh4 = "h"
-    elif Id7 == "4":
-        kode_mini_plysh4 = "i"
-    elif Id7 == "5":
-        kode_mini_plysh4 = "h"
-    elif Id7 == "6":
-        kode_mini_plysh4 = "i"
-    elif Id7 == "7":
-        kode_mini_plysh4 = "l"
-    elif Id7 == "8":
-        kode_mini_plysh4 = "u"
-    elif Id7 == "9":
-        kode_mini_plysh4 = "u"
+    Id7Id = {"1": "u", "0": "u", "2": "s", "3": "h", "4": "i", "5": "h", "6": "i", "7": "l", "8": "u", "9": "u"}
+    for i in Id7Id:
+        if Id7 == i:
+            kode_mini_plysh4 = Id7Id[i]
     print("27%")
-    if Id14 == "1":
-        kode_mini_plysh5 = "s"
-    elif Id14 == "0":
-        kode_mini_plysh5 = "s"
-    elif Id14 == "2":
-        kode_mini_plysh5 = "s"
-    elif Id14 == "3":
-        kode_mini_plysh5 = "h"
-    elif Id14 == "4":
-        kode_mini_plysh5 = "h"
-    elif Id14 == "5":
-        kode_mini_plysh5 = "h"
-    elif Id14 == "6":
-        kode_mini_plysh5 = "s"
-    elif Id14 == "7":
-        kode_mini_plysh5 = "s"
-    elif Id14 == "8":
-        kode_mini_plysh5 = "h"
-    elif Id14 == "9":
-        kode_mini_plysh5 = "h"
-    if Id14 == "1":
-        kode_mini_plysh6 = "h"
-    elif Id14 == "0":
-        kode_mini_plysh6 = "h"
-    elif Id14 == "2":
-        kode_mini_plysh6 = "h"
-    elif Id14 == "3":
-        kode_mini_plysh6 = "s"
-    elif Id14 == "4":
-        kode_mini_plysh6 = "s"
-    elif Id14 == "5":
-        kode_mini_plysh6 = "s"
-    elif Id14 == "6":
-        kode_mini_plysh6 = "h"
-    elif Id14 == "7":
-        kode_mini_plysh6 = "h"
-    elif Id14 == "8":
-        kode_mini_plysh6 = "s"
-    elif Id14 == "9":
-        kode_mini_plysh6 = "s"
+    Id14Id = {"1": "s", "0": "s", "2": "s", "3": "h", "4": "h", "5": "h", "6": "s", "7": "s", "8": "h", "9": "h"}
+    for i in Id14Id:
+        if Id14 == i:
+            kode_mini_plysh5 = Id14Id[i]
     print("30%")
+    Id14Id1 = {"1": "h", "0": "h", "2": "h", "3": "s", "4": "s", "5": "s", "6": "h", "7": "h", "8": "s", "9": "s"}
+    for i in Id14Id1:
+        if Id14 == i:
+            kode_mini_plysh6 = Id14Id1[i]
+    print("32%")
     kode_mini_plysh = kode_mini_plysh1 + "-" + kode_mini_plysh2 + kode_mini_plysh3 + kode_mini_plysh4 + kode_mini_plysh5 + kode_mini_plysh6
+    print("36%")
     omer += 1
 
 
@@ -235,7 +157,7 @@ def miniplush():
 
 
 miniplush()
-print("34%")
+print("40%")
 
 
 def pervkart():
@@ -395,7 +317,7 @@ def person(lives, Weapon):
         pervonahalWeapon = Weapon
 
 
-print("37%")
+print("47%")
 
 
 def boxes():
@@ -715,6 +637,9 @@ def boxes():
         print("Ок")
 
 
+print("56%")
+
+
 def shops(magz, mcikl, loc1, loc2, loc3):
     global emeralds, PBox, LBox, magpok1, magpok2, magpok3
     if magz > 5:
@@ -822,6 +747,9 @@ def shops(magz, mcikl, loc1, loc2, loc3):
                 mcikl = False
 
 
+print("67%")
+
+
 def ad1():
     global emeralds, loc1, sobp
     if magpok1 == 1:
@@ -841,6 +769,9 @@ def ad1():
                 print("У вас недостатачно изумрудов!")
         else:
             print("Ок")
+
+
+print("69%")
 
 
 def stryktyr():
@@ -864,6 +795,9 @@ def stryktyr():
             print("Ок")
 
 
+print("71%")
+
+
 def stryktyrna():
     global emeralds, loc3, sobp
     if magpok3 == 1:
@@ -883,6 +817,9 @@ def stryktyrna():
                 print("У вас недостатачно изумрудов!")
         else:
             print("Ок")
+
+
+print("73%")
 
 
 def liga(MAXtrophei, trophei):
@@ -968,6 +905,11 @@ def liga(MAXtrophei, trophei):
             print("Ваша ступень: Стальная IV")
         elif 7400 > trophei >= 6900:
             print("Ваша ступень: Стальная V")
+
+
+print("80%")
+
+
 def wonekart():
     print("🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫")
     print("🟫🟥🟩🟩🟩🟩🟩🟫🟩🟫")
@@ -981,16 +923,23 @@ def wonekart():
     print("🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫")
 
 
+print("83%")
+
+
 def name_simvl(playname, nam_sim):
     b = nam_sim
     nam_sim = len(playname)
     return nam_sim
 
 
+print("84%")
+
+
 def clear():
     return os.system('cls')
 
 
+print("84.4%")
 print("Welcome to Cloudcore")
 print(" version:", version)
 # if omer == 1:

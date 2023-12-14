@@ -189,7 +189,7 @@ go_player_minimap_ob_st8 = poldeptopF.get("go_player_minimap_ob_st8", "")
 free23 = poldeptopF.get("free23", 0)
 HALVA_VC = poldeptopF.get("HALVA_VC", 0)
 lapota = poldeptopF.get("lapota", 0)
-version = poldeptopF.get("version", "1.5.8-A")
+version = poldeptopF.get("version", "1.6.0-A")
 # free23
 # HALVA_VC
 # lapota
