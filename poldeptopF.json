@@ -112,6 +112,8 @@
   "menu" : "",
   "comandexpi" : "",
 
+  "menlist" : 0,
+
   "name_reg" : true,
   "nam_sim" : 1,
 
@@ -129,6 +131,7 @@
   "mipl2" : 0,
   "mipl1" : 0,
   "mipl" : 0,
+  "donat_stars1" : 0,
 
   "go_player_minimap_ob_st6" : "",
   "go_player_minimap_ob_st11" : "",

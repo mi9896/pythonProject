@@ -136,6 +136,7 @@ prom = poldeptopF.get("prom", "")
 menu = poldeptopF.get("menu", "")
 comandexpi = poldeptopF.get("comandexpi", "")
 sobp = ""
+menlist = poldeptopF.get("menlist", 0)
 
 
 # ограниченое количество символов имени
@@ -160,6 +161,9 @@ mipl2 = poldeptopF.get("mipl2", 0)
 mipl1 = poldeptopF.get("mipl1", 0)
 mipl = poldeptopF.get("mipl", 0)
 # мини-плюшка!
+# донат функции:
+donat_stars1 = poldeptopF.get("donat_stars1", 0)
+# донат функции:
 # фукции:
 
 # Поддержка карты:
