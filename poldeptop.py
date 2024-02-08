@@ -2,10 +2,20 @@ import random
 from poldeptopFL import *
 import json
 import os
+from colorama import init
+init()
 # emeralds = 100
 # PBox = 0
 # LBox = 0
 # persona = 1
+
+from colorama import Fore, Back, Style
+# print(Fore.RED + 'some red text')
+# print(Back.MAGENTA + 'and with a green background' + Style.RESET_ALL)
+# print(Back.LIGHTMAGENTA_EX + Fore.LIGHTCYAN_EX + 'and in dim text' + "            " + Style.RESET_ALL)
+# print(Style.RESET_ALL)
+# print('back to normal now')
+
 
 def remesting():
     print("Таблица лидеров: ")
@@ -828,10 +838,11 @@ def menu_list():
         if dorstkvazvaniy == 1:
             print("'профиль','лидеры','персонажи','магазин','ящики','промокоды','лига','выживание','играть'.")
         elif dorstkvazvaniy == 0:
-            print("'профиль','лидеры','персонажи','магазин','ящики','промокоды','лига','выживание','играть'.")
+            print("'профиль','лидеры','персонажи','магазин','ящики','промокоды','лига','играть'.")
     elif donat_stars1 == 1:
-        print("'разное', 'профиль', 'лидеры', 'персонажи', "
-              "\n'магазин', 'ящики', 'промокоды', 'лига', 'играть', 'выживание'.")
+        if menlist == 1:
+            print("'разное', 'профиль', 'лидеры', 'персонажи', "
+                  "\n'магазин', 'ящики', 'промокоды', 'лига', 'играть', 'выживание'.")
         # if dorstkvazvaniy == 1:
         #     print("'выживание'")
     else:
@@ -841,7 +852,8 @@ def menu_list():
 
 # Ошибки:
 # 1 - ошибки переменных
-# 1.1 - ошибка связана с переменой menlist и скорее всего у вас не отображется доступные варианты действий, а это значит, что переменныя либо изменена либо с ней произошло, что то другое
+# 1.1 - ошибка связана с переменой menlist и скорее всего у вас не отображется
+# доступные варианты действий, а это значит, что переменныя либо изменена либо с ней произошло, что то другое
 
 
 def liga(MAXtrophei, trophei):
@@ -1060,7 +1072,7 @@ if signature == "mi97-98lo-g011-rim6":
             elif trophei > MAXtrophei:
                 MAXtrophei = trophei
         print("Ваши изумруды: ❇️", emeralds, "❇️")
-
+        menu_list()
 
         menu = input()
         if menu == "/akvadevida":
@@ -1103,6 +1115,7 @@ if signature == "mi97-98lo-g011-rim6":
                     print("Вы уже активировали данный промокод!")
             elif prom == kode_mini_plysh:
                 donat_stars1 = 1
+                menlist += 1
                 print("Вы успешно активировали данный ключ!")
             else:
                 print("Данного промокода несуществует!")
@@ -1117,72 +1130,83 @@ if signature == "mi97-98lo-g011-rim6":
                 remestingpt()
         elif menu == "/":
             if ADMINPRAV == 9896:
-                print("Все команды: /em [set, add, dell] [5, 7, 10, 20, 50, 100, 200, 500, 1000, 5000],"
+                print("Все команды: /em [set, add, dell] [Любое число],"
                       " /lbox , /pbox , /yp , /trof , /nam , /plysh")
                 comandexpi = input()
                 print("comandexpi =", comandexpi)
+                comd = comandexpi[0:7]
                 if comandexpi == "/plysh":
                     print(kode_mini_plysh)
-                elif comandexpi == "/em set 5":
-                    emeralds = 5
-                elif comandexpi == "/em set 7":
-                    emeralds = 7
-                elif comandexpi == "/em set 10":
-                    emeralds = 10
-                elif comandexpi == "/em set 20":
-                    emeralds = 20
-                elif comandexpi == "/em set 50":
-                    emeralds = 50
-                elif comandexpi == "/em set 100":
-                    emeralds = 100
-                elif comandexpi == "/em set 200":
-                    emeralds = 200
-                elif comandexpi == "/em set 500":
-                    emeralds = 500
-                elif comandexpi == "/em set 1000":
-                    emeralds = 1000
-                elif comandexpi == "/em set 5000":
-                    emeralds = 5000
-                elif comandexpi == "/em add 5":
-                    emeralds += 5
-                elif comandexpi == "/em add 7":
-                    emeralds += 7
-                elif comandexpi == "/em add 10":
-                    emeralds += 10
-                elif comandexpi == "/em add 20":
-                    emeralds += 20
-                elif comandexpi == "/em add 50":
-                    emeralds += 50
-                elif comandexpi == "/em add 100":
-                    emeralds += 100
-                elif comandexpi == "/em add 200":
-                    emeralds += 200
-                elif comandexpi == "/em add 500":
-                    emeralds += 500
-                elif comandexpi == "/em add 1000":
-                    emeralds += 1000
-                elif comandexpi == "/em add 5000":
-                    emeralds += 5000
-                elif comandexpi == "/em dell 5":
-                    emeralds -= 5
-                elif comandexpi == "/em dell 7":
-                    emeralds -= 7
-                elif comandexpi == "/em dell 10":
-                    emeralds -= 10
-                elif comandexpi == "/em dell 20":
-                    emeralds -= 20
-                elif comandexpi == "/em dell 50":
-                    emeralds -= 50
-                elif comandexpi == "/em dell 100":
-                    emeralds -= 100
-                elif comandexpi == "/em dell 200":
-                    emeralds -= 200
-                elif comandexpi == "/em dell 500":
-                    emeralds -= 500
-                elif comandexpi == "/em dell 1000":
-                    emeralds -= 1000
-                elif comandexpi == "/em dell 5000":
-                    emeralds -= 5000
+                elif comd == "/em add":
+                    comdi = int(comandexpi[8:])
+                    emeralds += comdi
+                elif comd == "/em set":
+                    comdi = int(comandexpi[8:])
+                    emeralds = comdi
+                comd = comandexpi[0:8]
+                if comd == "/em dell":
+                    comdi = int(comandexpi[9:])
+                    emeralds -= comdi
+                # elif comandexpi == "/em set 5":
+                #     emeralds = 5
+                # elif comandexpi == "/em set 7":
+                #     emeralds = 7
+                # elif comandexpi == "/em set 10":
+                #     emeralds = 10
+                # elif comandexpi == "/em set 20":
+                #     emeralds = 20
+                # elif comandexpi == "/em set 50":
+                #     emeralds = 50
+                # elif comandexpi == "/em set 100":
+                #     emeralds = 100
+                # elif comandexpi == "/em set 200":
+                #     emeralds = 200
+                # elif comandexpi == "/em set 500":
+                #     emeralds = 500
+                # elif comandexpi == "/em set 1000":
+                #     emeralds = 1000
+                # elif comandexpi == "/em set 5000":
+                #     emeralds = 5000
+                # elif comandexpi == "/em add 5":
+                #     emeralds += 5
+                # elif comandexpi == "/em add 7":
+                #     emeralds += 7
+                # elif comandexpi == "/em add 10":
+                #     emeralds += 10
+                # elif comandexpi == "/em add 20":
+                #     emeralds += 20
+                # elif comandexpi == "/em add 50":
+                #     emeralds += 50
+                # elif comandexpi == "/em add 100":
+                #     emeralds += 100
+                # elif comandexpi == "/em add 200":
+                #     emeralds += 200
+                # elif comandexpi == "/em add 500":
+                #     emeralds += 500
+                # elif comandexpi == "/em add 1000":
+                #     emeralds += 1000
+                # elif comandexpi == "/em add 5000":
+                #     emeralds += 5000
+                # elif comandexpi == "/em dell 5":
+                #     emeralds -= 5
+                # elif comandexpi == "/em dell 7":
+                #     emeralds -= 7
+                # elif comandexpi == "/em dell 10":
+                #     emeralds -= 10
+                # elif comandexpi == "/em dell 20":
+                #     emeralds -= 20
+                # elif comandexpi == "/em dell 50":
+                #     emeralds -= 50
+                # elif comandexpi == "/em dell 100":
+                #     emeralds -= 100
+                # elif comandexpi == "/em dell 200":
+                #     emeralds -= 200
+                # elif comandexpi == "/em dell 500":
+                #     emeralds -= 500
+                # elif comandexpi == "/em dell 1000":
+                #     emeralds -= 1000
+                # elif comandexpi == "/em dell 5000":
+                #     emeralds -= 5000
                 elif comandexpi == "/lbox":
                     LBox += int(input("Введите количество для добавления: "))
                 elif comandexpi == "/pbox":
