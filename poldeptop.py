@@ -20,17 +20,17 @@ from colorama import Fore, Back, Style
 def remesting():
     print("Таблица лидеров: ")
     if emeralds > em1:
-        print(mes1, playname, vin1, "❇️ кол.изумрудов:", emeralds, "❇️ ID:", IdifendIp)
+        print(mes1, playname, vin1, "❇️ кол.изумрудов:", Fore.LIGHTGREEN_EX + emeralds, Style.RESET_ALL + "❇️ ID:", IdifendIp)
         print(mes2, MEST1, vin2, MEST1_1)
         print(mes3, MEST2, vin3, MEST2_2)
     elif emeralds > em2:
         print(mes1, MEST1, vin1, MEST1_1)
-        print(mes2, playname, vin2, "❇️ кол.изумрудов:", emeralds, "❇️ ID:", IdifendIp)
+        print(mes2, playname, vin2, "❇️ кол.изумрудов:", Fore.LIGHTGREEN_EX + emeralds, Style.RESET_ALL + "❇️ ID:", IdifendIp)
         print(mes3, MEST2, vin3, MEST2_2)
     elif emeralds > em3:
         print(mes1, MEST1, vin1, MEST1_1)
         print(mes2, MEST2, vin2, MEST2_2)
-        print(mes3, playname, vin3, "❇️ кол.изумрудов:", emeralds, "❇️ ID:", IdifendIp)
+        print(mes3, playname, vin3, "❇️ кол.изумрудов:", Fore.LIGHTGREEN_EX + emeralds, Style.RESET_ALL + "❇️ ID:", IdifendIp)
     else:
         print(mes1, MEST1, vin1, MEST1_1)
         print(mes2, MEST2, vin2, MEST2_2)
@@ -40,17 +40,17 @@ def remesting():
 def remestingpy():
     print("Таблица лидеров: ")
     if yrprof > yp1:
-        print(mes1, playname, vin1, "🎓 Уровень профиля:", yrprof, "🎓 ID:", IdifendIp)
+        print(mes1, playname, vin1, "🎓 Уровень профиля:", Fore.LIGHTBLACK_EX + yrprof, Style.RESET_ALL + "🎓 ID:", IdifendIp)
         print(mes2, MESTPY1, vin2, MESTPY1_1)
         print(mes3, MESTPY2, vin3, MESTPY2_2)
     elif yrprof > yp2:
         print(mes1, MESTPY1, vin1, MESTPY1_1)
-        print(mes2, playname, vin2, "🎓 Уровень профиля:", yrprof, "🎓 ID:", IdifendIp)
+        print(mes2, playname, vin2, "🎓 Уровень профиля:", Fore.LIGHTBLACK_EX + yrprof, Style.RESET_ALL + "🎓 ID:", IdifendIp)
         print(mes3, MESTPY2, vin3, MESTPY2_2)
     elif yrprof > yp3:
         print(mes1, MESTPY1, vin1, MESTPY1_1)
         print(mes2, MESTPY2, vin2, MESTPY2_2)
-        print(mes3, playname, vin3, "🎓 Уровень профиля:", yrprof, "🎓 ID:", IdifendIp)
+        print(mes3, playname, vin3, "🎓 Уровень профиля:", Fore.LIGHTBLACK_EX + yrprof, Style.RESET_ALL + "🎓 ID:", IdifendIp)
     else:
         print(mes1, MESTPY1, vin1, MESTPY1_1)
         print(mes2, MESTPY2, vin2, MESTPY2_2)
@@ -60,17 +60,17 @@ def remestingpy():
 def remestingpt():
     print("Таблица лидеров: ")
     if trophei > tr1:
-        print(mes1, playname, vin1, "🏆 Количество трофеев:", trophei, "🏆 ID:", IdifendIp)
+        print(mes1, playname, vin1, "🏆 Количество трофеев:", Fore.LIGHTYELLOW_EX + trophei, Style.RESET_ALL + "🏆 ID:", IdifendIp)
         print(mes2, MESTPT1, vin2, MESTPT1_1)
         print(mes3, MESTPT2, vin3, MESTPT2_2)
     elif trophei > tr2:
         print(mes1, MESTPT1, vin1, MESTPT1_1)
-        print(mes2, playname, vin2, "🏆 Количество трофеев:", trophei, "🏆 ID:", IdifendIp)
+        print(mes2, playname, vin2, "🏆 Количество трофеев:", Fore.LIGHTYELLOW_EX + trophei, Style.RESET_ALL + "🏆 ID:", IdifendIp)
         print(mes3, MESTPT2, vin3, MESTPT2_2)
     elif trophei > tr3:
         print(mes1, MESTPT1, vin1, MESTPT1_1)
         print(mes2, MESTPT2, vin2, MESTPT2_2)
-        print(mes3, playname, vin3, "🏆 Количество трофеев:", trophei, "🏆 ID:", IdifendIp)
+        print(mes3, playname, vin3, "🏆 Количество трофеев:", Fore.LIGHTYELLOW_EX + trophei, Style.RESET_ALL + "🏆 ID:", IdifendIp)
     else:
         print(mes1, MESTPT1, vin1, MESTPT1_1)
         print(mes2, MESTPT2, vin2, MESTPT2_2)
@@ -346,39 +346,39 @@ def boxes():
                 rrenPBox = random.choice(renPBox)
                 print("сл.д.1")
                 if rrenPBox == 1:
-                    print("Вам выпало: ❇️ 30 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 30 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 30
                 elif rrenPBox == 2:
-                    print("Вам выпало: ❇️ 95 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 95 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 95
                 elif rrenPBox == 3:
-                    print("Вам выпало: ❇️ 120 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 120 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 120
                 elif rrenPBox == 4:
-                    print("Вам выпало: ❇️ 160 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 160 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 160
                 elif rrenPBox == 5:
-                    print("Вам выпало: ❇️ 240 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 240 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 240
                 elif rrenPBox == 6:
-                    print("Вам выпало: ❇️ 400 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 400 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 400
                 elif rrenPBox == 7:
-                    print("Вам выпало: ❇️ 30 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 30 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 30
                 elif rrenPBox == 8:
-                    print("Вам выпало: ❇️ 95 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 95 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 95
                 elif emeralds == 9:
-                    print("Вам выпало: ❇️ 30 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 30 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 30
                 elif rrenPBox == 10:
-                    print("Вам выпало: ❇️ 15 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 15 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 15
                 elif rrenPBox == 11:
                     if loc1 == 1:
                         if loc2 == 1:
-                            print("Вам выпало: ❇️ 360 изумрудов ❇️")
+                            print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 360 изумрудов ❇️" + Style.RESET_ALL)
                             emeralds += 360
                         elif loc2 == 0:
                             print("Вам выпал: Структурный")
@@ -391,7 +391,7 @@ def boxes():
                         DostPersone.append('AD1')
                         magpok1 = 0
                 elif rrenPBox == 12:
-                    print("Вам выпало: ❇️ 240 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 240 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 240
                 else:
                     print("ошибка")
@@ -404,13 +404,13 @@ def boxes():
                 LBox -= 1
                 rrenLBox = random.choice(renLBox)
                 if rrenLBox == 1:
-                    print("Вам выпало: ❇️ 100 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 100 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 100
                 elif rrenLBox == 2:
-                    print("Вам выпало: ❇️ 240 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 240 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 240
                 elif rrenLBox == 3:
-                    print("Вам выпало: ❇️ 100 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 100 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 100
                 elif rrenLBox == 4:
                     if loc1 == 1:
@@ -420,7 +420,7 @@ def boxes():
                                     if loc5 == 1:
                                         if loc6 == 1:
                                             if loc7 == 1:
-                                                print("Вам выпало: ❇️ 360 изумрудов ❇️")
+                                                print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 360 изумрудов ❇️" + Style.RESET_ALL)
                                                 emeralds += 360
                                             elif loc7 == 0:
                                                 print("Вам выпал: Кубер")
@@ -461,7 +461,7 @@ def boxes():
                                     if loc5 == 1:
                                         if loc6 == 1:
                                             if loc7 == 1:
-                                                print("Вам выпало: ❇️ 420 изумрудов ❇️")
+                                                print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 420 изумрудов ❇️" + Style.RESET_ALL)
                                                 emeralds += 420
                                             elif loc7 == 0:
                                                 print("Вам выпал: Кубер")
@@ -502,7 +502,7 @@ def boxes():
                                     if loc5 == 1:
                                         if loc6 == 1:
                                             if loc7 == 1:
-                                                print("Вам выпало: ❇️ 480 изумрудов ❇️")
+                                                print("Вам выпало: " + Fore.LIGHTGREEN_EX + "❇️ 480 изумрудов ❇️" + Style.RESET_ALL)
                                                 emeralds += 480
                                             elif loc7 == 0:
                                                 print("Вам выпал: Кубер")
@@ -543,7 +543,7 @@ def boxes():
                                     if loc5 == 1:
                                         if loc6 == 1:
                                             if loc7 == 1:
-                                                print("Вам выпало: ❇️ 675 изумрудов ❇️")
+                                                print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 675 изумрудов ❇️" + Style.RESET_ALL)
                                                 emeralds += 675
                                             elif loc7 == 0:
                                                 print("Вам выпал: Кубер")
@@ -577,25 +577,25 @@ def boxes():
                         DostPersone.append('AD1')
                         magpok1 = 0
                 elif rrenLBox == 8:
-                    print("Вам выпало: ❇️ 100 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 100 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 100
                 elif rrenLBox == 9:
-                    print("Вам выпало: ❇️ 240 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 240 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 240
                 elif rrenLBox == 10:
-                    print("Вам выпало: ❇️ 1375 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 1375 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 1375
                 elif rrenLBox == 11:
-                    print("Вам выпало: ❇️ 240 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 240 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 240
                 elif rrenLBox == 12:
-                    print("Вам выпало: ❇️ 160 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 160 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 160
                 elif rrenLBox == 13:
-                    print("Вам выпало: ❇️ 400 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 400 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 400
                 elif rrenLBox == 14:
-                    print("Вам выпало: ❇️ 240 изумрудов ❇️")
+                    print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 240 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 240
                 elif rrenLBox == 15:
                     if loc1 == 1:
@@ -605,7 +605,7 @@ def boxes():
                                     if loc5 == 1:
                                         if loc6 == 1:
                                             if loc7 == 1:
-                                                print("Вам выпало: ❇️ 985 изумрудов ❇️")
+                                                print("Вам выпало:" + Fore.LIGHTGREEN_EX + " ❇️ 985 изумрудов ❇️" + Style.RESET_ALL)
                                                 emeralds += 985
                                             elif loc7 == 0:
                                                 print("Вам выпал: Кубер")
@@ -729,7 +729,7 @@ def shops(magz, mcikl, loc1, loc2, loc3):
                         emeralds -= bzen2
                         PBox += kola
                         print("Покупка прошла успешно!")
-                        print("Ваше количество изумрудов:", emeralds)
+                        print("Ваше количество изумрудов:",  emeralds)
                     else:
                         print("У вас недостатачно изумрудов!")
                 else:
@@ -765,7 +765,7 @@ def ad1():
     if magpok1 == 1:
         print("Выбран:", sobp)
         print("Тип персонаж")
-        print("Цена: ❇️ 230 изумрудов ❇️")
+        print("Цена: " + Fore.LIGHTGREEN_EX + " ❇️ 230 изумрудов ❇️" + Style.RESET_ALL)
         print("Вы покупаете?")
         sobp = input()
         if sobp == "да":
@@ -774,7 +774,7 @@ def ad1():
                 loc1 = 1
                 DostPersone.append('AD1')
                 print("Покупка прошла успешно!")
-                print("Ваше количество изумрудов:", emeralds)
+                print("Ваше количество изумрудов:",  emeralds)
             else:
                 print("У вас недостатачно изумрудов!")
         else:
@@ -789,7 +789,7 @@ def stryktyr():
     if magpok2 == 1:
         print("Выбран:", sobp)
         print("Тип персонаж")
-        print("Цена: ❇️ 160 изумрудов ❇️")
+        print("Цена: " + Fore.LIGHTGREEN_EX + "❇️ 160 изумрудов ❇️" + Style.RESET_ALL)
         print("Вы покупаете?")
         sobp = input()
         if sobp == "да":
@@ -798,7 +798,7 @@ def stryktyr():
                 loc2 = 1
                 DostPersone.append('Структурный')
                 print("Покупка прошла успешно!")
-                print("Ваше количество изумрудов:", emeralds)
+                print("Ваше количество изумрудов:",  emeralds)
             else:
                 print("У вас недостатачно изумрудов!")
         else:
@@ -813,7 +813,7 @@ def stryktyrna():
     if magpok3 == 1:
         print("Выбрана:", sobp)
         print("Тип персонаж")
-        print("Цена: ❇️ 180 изумрудов ❇️")
+        print("Цена:" + Fore.LIGHTGREEN_EX + " ❇️ 180 изумрудов ❇️" + Style.RESET_ALL)
         print("Вы покупаете?")
         sobp = input()
         if sobp == "да":
@@ -822,7 +822,7 @@ def stryktyrna():
                 loc3 = 1
                 DostPersone.append('Структурная')
                 print("Покупка прошла успешно!")
-                print("Ваше количество изумрудов:", emeralds)
+                print("Ваше количество изумрудов:",  emeralds)
             else:
                 print("У вас недостатачно изумрудов!")
         else:
@@ -836,13 +836,15 @@ def menu_list():
     global menlist
     if menlist == 0:
         if dorstkvazvaniy == 1:
-            print("'профиль','лидеры','персонажи','магазин','ящики','промокоды','лига','выживание','играть'.")
+            print(Fore.LIGHTYELLOW_EX + "'профиль','лидеры','персонажи','магазин','ящики',"
+                  "'промокоды','лига','выживание','играть'." + Style.RESET_ALL)
         elif dorstkvazvaniy == 0:
-            print("'профиль','лидеры','персонажи','магазин','ящики','промокоды','лига','играть'.")
+            print(Fore.LIGHTYELLOW_EX + "'профиль','лидеры','персонажи','магазин','ящики',"
+                                        "'промокоды','лига','играть'." + Style.RESET_ALL)
     elif donat_stars1 == 1:
         if menlist == 1:
-            print("'разное', 'профиль', 'лидеры', 'персонажи', "
-                  "\n'магазин', 'ящики', 'промокоды', 'лига', 'играть', 'выживание'.")
+            print(Fore.LIGHTYELLOW_EX + "'разное', 'профиль', 'лидеры', 'персонажи', "
+                  "\n'магазин', 'ящики', 'промокоды', 'лига', 'играть', 'выживание'." + Style.RESET_ALL)
         # if dorstkvazvaniy == 1:
         #     print("'выживание'")
     else:
@@ -974,7 +976,7 @@ def clear():
 
 
 print("84.4%")
-print("Welcome to Cloudcore")
+print(Fore.WHITE + "Welcome to " + Fore.LIGHTWHITE_EX + "Cloudcore" + Style.RESET_ALL)
 print(" version:", version)
 # if omer == 1:
 #     playname = input("Введите свой никнейм:")
@@ -1058,20 +1060,22 @@ if signature == "mi97-98lo-g011-rim6":
         if yrproff >= 1:
             yrproff -= 1
             yrprof += 1
-            print("🆙Уровень повышен!🆙")
+            print("\n" + Back.LIGHTBLUE_EX + "\n" + Style.RESET_ALL +
+                Fore.LIGHTBLUE_EX + "🆙Уровень повышен!🆙" + Style.RESET_ALL +
+                  "\n" + Back.LIGHTBLUE_EX + "\n" + Style.RESET_ALL)
         if mtik1 < 1:
             mtik10 -= 5
         if mtik1 <= 0:
             mtik1 = 10
             if mtik10 <= 0:
                 mtik10 = 10
-                magz += 1
+                # magz += 1
         if trophei == trophei:
             if trophei < 0:
                 trophei = 0
             elif trophei > MAXtrophei:
                 MAXtrophei = trophei
-        print("Ваши изумруды: ❇️", emeralds, "❇️")
+        print("Ваши изумруды: " + Fore.LIGHTGREEN_EX + "❇️", emeralds, "❇️" + Style.RESET_ALL)
         menu_list()
 
         menu = input()
@@ -1094,28 +1098,28 @@ if signature == "mi97-98lo-g011-rim6":
             prom = input()
             if prom == "free23":
                 if free23 == 0:
-                    print("Вы получили: ❇️ 2023 изумруда ❇️")
+                    print("Вы получили: " + Fore.LIGHTGREEN_EX + "❇️ 2023 изумруда ❇️" + Style.RESET_ALL)
                     emeralds += 2023
                     free23 += 1
                 else:
                     print("Вы уже активировали данный промокод!")
             elif prom == "HALVA_VC":
                 if HALVA_VC == 0:
-                    print("Вы получили: ❇️ 500 изумрудов ❇️")
+                    print("Вы получили: " + Fore.LIGHTGREEN_EX + "❇️ 500 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 500
                     HALVA_VC += 1
                 else:
                     print("Вы уже активировали данный промокод!")
             elif prom == "lapota":
                 if lapota == 0:
-                    print("Вы получили: ❇️ 5000 изумрудов ❇️")
+                    print("Вы получили: " + Fore.LIGHTGREEN_EX + "❇️ 5000 изумрудов ❇️" + Style.RESET_ALL)
                     emeralds += 5000
                     lapota += 1
                 else:
                     print("Вы уже активировали данный промокод!")
             elif prom == kode_mini_plysh:
                 donat_stars1 = 1
-                menlist += 1
+                menlist = 1
                 print("Вы успешно активировали данный ключ!")
             else:
                 print("Данного промокода несуществует!")
@@ -1219,10 +1223,10 @@ if signature == "mi97-98lo-g011-rim6":
                     playname = input("Введите новое имя: ")
         elif menu == "профиль":
             print("       Ваш никнейм:", playname)
-            print("Ваше количество изумрудов: ❇️", emeralds, "❇️")
+            print("Ваше количество изумрудов: " + Fore.LIGHTGREEN_EX + "❇️", emeralds, "❇️" + Style.RESET_ALL)
             print("   Ваш айди пользователя:", IdifendIp)
-            print(" Ваш уровень профиля: 🎓", yrprof, "🎓")
-            print("Количество ваших трофеев: 🏆", trophei, "🏆")
+            print(" Ваш уровень профиля: " + Fore.LIGHTBLACK_EX + "🎓", yrprof, "🎓" + Style.RESET_ALL)
+            print("Количество ваших трофеев: " + Fore.LIGHTYELLOW_EX + "🏆", trophei, "🏆" + Style.RESET_ALL)
         elif menu == "выживание":
             if dorstkvazvaniy == 1:
                 if donat_stars1 == 1:
@@ -1268,7 +1272,7 @@ if signature == "mi97-98lo-g011-rim6":
                     if vsnpc == 0:
                         print("Вы прошли обучение!")
                         print("Ваша награда: 1 легаси ящик")
-                        print("              + 2 трофея")
+                        print("              + " + Fore.LIGHTYELLOW_EX + "2 " + Style.RESET_ALL + "трофея")
                         trophei += 2
                         yrproff += 0.6
                         LBox += 1
