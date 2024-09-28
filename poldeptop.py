@@ -16,6 +16,194 @@ from colorama import Fore, Back, Style
 # print(Style.RESET_ALL)
 # print('back to normal now')
 
+for i in range(10):
+    if i <= 10:
+        if i <= 3:
+            print(Fore.LIGHTRED_EX + forli_non + Style.RESET_ALL)
+            forli_non += "━━━"
+            os.system("cls")
+        elif i <= 6:
+            print(Fore.LIGHTYELLOW_EX + forli_non + Style.RESET_ALL)
+            forli_non += "━━━"
+            os.system("cls")
+        elif i <= 10:
+            print(Fore.LIGHTGREEN_EX + forli_non + Style.RESET_ALL)
+            forli_non += "━━━"
+            os.system("cls")
+    forli += 1
+
+
+zastavka = 1
+
+
+for i in range(50000):
+    if zastavka == 1:
+        print("⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛")
+        for i in range(100000):
+            zz = zastavka
+            zastavka = zz
+        print("⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛")
+        for i in range(100000):
+            zz = zastavka
+            zastavka = zz
+        print("⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬛⬛⬛⬛⬛⬛⬛⬛")
+        for i in range(100000):
+            zz = zastavka
+            zastavka = zz
+        print("⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬛⬛⬛⬛⬛⬛⬛")
+        for i in range(100000):
+            zz = zastavka
+            zastavka = zz
+        print("⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬛⬛⬛⬛⬛⬛")
+        for i in range(100000):
+            zz = zastavka
+            zastavka = zz
+        print("⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜🟥⬜⬜⬜⬜⬜⬜⬛⬛⬛⬛⬛")
+        for i in range(100000):
+            zz = zastavka
+            zastavka = zz
+        print("⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜🟩🟨🟪⬜⬜⬜⬜⬜⬛⬛⬛⬛⬛")
+        for i in range(100000):
+            zz = zastavka
+            zastavka = zz
+        print("⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜🟦⬜⬜⬜⬜⬜⬜⬛⬛⬛⬛⬛")
+        for i in range(100000):
+            zz = zastavka
+            zastavka = zz
+        print("⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬛⬛⬛⬛⬛⬛")
+        for i in range(100000):
+            zz = zastavka
+            zastavka = zz
+        print("⬛⬛🟨⬛🟧🟧⬛⬜⬜⬜🟧🟧🟧⬜⬜⬜⬛🟧🟧⬛🟨⬛⬛")
+        for i in range(100000):
+            zz = zastavka
+            zastavka = zz
+        print("⬛⬛⬛🟨⬜🟧⬛⬛⬜🟧⬛⬛⬛🟧⬜⬛⬛🟧⬜🟨⬛⬛⬛")
+        for i in range(100000):
+            zz = zastavka
+            zastavka = zz
+        print("⬛⬛⬜⬜⬜⬜🟧⬛⬛⬛⬛⬜⬛⬛⬛⬛🟧⬜⬜⬜⬜⬛⬛")
+        for i in range(100000):
+            zz = zastavka
+            zastavka = zz
+        print("⬛⬛⬜⬜⬜⬜⬛⬛⬛⬛⬜⬜⬜⬛⬛⬛⬛⬜⬜⬜⬜⬛⬛")
+        for i in range(100000):
+            zz = zastavka
+            zastavka = zz
+        print("⬛⬜⬜⬜⬜⬜⬛⬛⬛⬛⬜🟩⬜⬛⬛⬛⬛⬜⬜⬜⬜⬜⬛")
+        for i in range(100000):
+            zz = zastavka
+            zastavka = zz
+        print("⬛⬜⬜⬜⬜⬛⬛⬛⬛⬛🟦🟩🟨⬛⬛⬛⬛⬛⬜⬜⬜⬜⬛")
+        for i in range(100000):
+            zz = zastavka
+            zastavka = zz
+        print("⬜⬜⬜⬜⬜⬛⬛⬛⬛⬛🟦🟩🟨⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜")
+        for i in range(100000):
+            zz = zastavka
+            zastavka = zz
+        print("⬜⬜⬜⬜⬛⬛⬛⬛⬛🟪🟦🟩🟨🟥⬛⬛⬛⬛⬛⬜⬜⬜⬜")
+        for i in range(100000):
+            zz = zastavka
+            zastavka = zz
+        print("⬜⬜⬜⬛⬛⬛⬛⬛⬛🟪🟦🟩🟨🟥⬛⬛⬛⬛⬛⬛⬜⬜⬜")
+        for i in range(100000):
+            zz = zastavka
+            zastavka = zz
+        print("⬜⬜⬛⬜⬜⬜⬜⬛🟪🟪🟦🟩🟨🟥🟥⬛⬜⬜⬜⬜⬛⬜⬜")
+        for i in range(7000000):
+            zz = zastavka
+            zastavka = zz
+    zastavka += 1
+    print("⬜⬜⬜⬜🟫🟫⬜⬛🟪🟪🟦🟩🟨🟥🟥⬛⬜🟫🟫⬜⬜⬜⬜")
+    for i in range(7):
+        zz = zastavka
+        zastavka = zz
+    print("⬛⬛⬛⬜⬜⬜⬜⬛🟪🟪🟦🟨🟨🟥🟥⬛⬜⬜⬜⬜⬛⬛⬛")
+    for i in range(7):
+        zz = zastavka
+        zastavka = zz
+    print("⬛⬛⬛⬛⬛⬛⬛⬛⬛🟪🟪🟨🟥🟥⬛⬛⬛⬛⬛⬛⬛⬛⬛")
+    for i in range(7):
+        zz = zastavka
+        zastavka = zz
+    print("⬛⬛⬛⬛⬛⬛⬛⬛⬛🟨🟪🟥🟥🟦⬛⬛⬛⬛⬛⬛⬛⬛⬛")
+    for i in range(7):
+        zz = zastavka
+        zastavka = zz
+    print("⬛⬛⬛⬛⬛⬛⬛⬛🟨🟨🟥🟥🟪🟦🟦⬛⬛⬛⬛⬛⬛⬛⬛")
+    for i in range(7):
+        zz = zastavka
+        zastavka = zz
+    print("⬛⬛⬛⬛⬛⬛⬛🟨🟨🟥🟥🟩🟪🟪🟦🟦⬛⬛⬛⬛⬛⬛⬛")
+    for i in range(7):
+        zz = zastavka
+        zastavka = zz
+    print("⬛⬛⬛⬛⬛⬛🟨🟨🟥🟥🟩🟩🟩🟪🟪🟦🟦⬛⬛⬛⬛⬛⬛")
+    for i in range(7):
+        zz = zastavka
+        zastavka = zz
+    print("⬛⬛⬛⬛⬛🟨🟨🟥🟥🟩🟩🟩🟩🟪🟪🟦🟦⬛⬛⬛⬛⬛")
+    for i in range(7):
+        zz = zastavka
+        zastavka = zz
+    print("⬛⬛⬛⬛🟨🟨🟥🟥⬛🟩🟩⬜🟩🟩⬛🟪🟪🟦🟦⬛⬛⬛⬛")
+    for i in range(7):
+        zz = zastavka
+        zastavka = zz
+    print("⬛⬛⬛⬛🟨🟨🟥🟥⬛🟩🟩⬜🟩🟩⬛🟪🟪🟦🟦⬛⬛⬛⬛")
+    for i in range(7):
+        zz = zastavka
+        zastavka = zz
+    print("⬛⬛⬛⬛⬛🟨🟨🟥🟥🟩🟩⬜🟩🟩🟪🟪🟦🟦⬛⬛⬛⬛⬛")
+    for i in range(7):
+        zz = zastavka
+        zastavka = zz
+    print("⬛⬛⬛⬛⬛⬛🟨🟨🟥🟥🟩🟩🟩🟪🟪🟦🟦⬛⬛⬛⬛⬛⬛")
+    for i in range(7):
+        zz = zastavka
+        zastavka = zz
+    print("⬛⬛⬛⬛⬛⬛⬛🟨🟨🟥🟥🟩🟪🟪🟦🟦⬛⬛⬛⬛⬛⬛⬛")
+    for i in range(7):
+        zz = zastavka
+        zastavka = zz
+    print("⬛⬛⬛⬛⬛⬛⬛⬛🟨🟨🟥🟪🟪🟦🟦⬛⬛⬛⬛⬛⬛⬛⬛")
+    for i in range(7):
+        zz = zastavka
+        zastavka = zz
+    print("⬛⬛⬛⬛⬛⬛⬛⬛⬛🟨🟪🟪🟥🟦⬛⬛⬛⬛⬛⬛⬛⬛⬛")
+    for i in range(7):
+        zz = zastavka
+        zastavka = zz
+    print("⬛⬛⬛⬛⬛⬛⬛⬛⬛🟪🟪🟦🟥🟥⬛⬛⬛⬛⬛⬛⬛⬛⬛")
+    for i in range(7):
+        zz = zastavka
+        zastavka = zz
+    print("⬛⬛⬛⬜⬜⬜⬜⬛🟪🟪🟦🟦🟨🟥🟥⬛⬜⬜⬜⬜⬛⬛⬛")
+    if zastavka == 50001:
+        print("⬛⬛⬛⬜⬜⬛⬛⬛🟪🟪🟦🟩🟨🟥🟥⬛⬛⬛⬜⬜⬛⬛⬛")
+        print("⬛⬛⬜⬜⬛🟪⬛⬛🟪🟪🟦🟩🟨🟥🟥⬛⬛🟥⬛⬜⬜⬛⬛")
+        print("⬛⬜⬜⬛⬛⬜⬛⬛⬛🟪🟦🟩🟨🟥⬛⬛⬛⬜⬛⬛⬜⬜⬛")
+        print("⬜⬜⬛⬛⬛⬛⬛⬜⬛🟪🟦🟩🟨🟥⬛⬜⬛⬛⬛⬛⬛⬜⬜")
+        print("⬜⬛⬛⬜⬛⬛⬛⬜⬛⬛🟦🟩🟨⬛⬛⬜⬛⬛⬛⬜⬛⬛⬜")
+        print("⬜⬜⬜⬜⬛⬛⬛⬛⬜⬛⬜🟩⬜⬛⬜⬛⬛⬛⬛⬜⬜⬜⬜")
+        print("⬛⬜⬛⬛⬛⬛⬛⬛⬜⬛⬜🟩⬜⬛⬜⬛⬛⬛⬛⬛⬛⬜⬛")
+        print("⬛⬜⬜⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬛⬛⬛⬛⬛⬛⬜⬜⬛")
+        print("⬛⬛⬛⬛⬛🟪⬛⬛⬛⬜⬜🟩⬜⬜⬛⬛⬛🟥⬛⬛⬛⬛⬛")
+        print("⬛⬛⬛⬛⬛⬛⬛⬛🟦⬜⬛🟩⬛⬜🟨⬛⬛⬛⬛⬛⬛⬛⬛")
+        print("⬛⬛⬛🟪⬛⬛⬛⬜⬛⬛⬜🟩⬜⬛⬛⬜⬛⬛⬛🟥⬛⬛⬛")
+        print("🟪⬜⬛⬜⬛⬛🟦⬛⬜⬜⬜⬜⬜⬜⬜⬛🟨⬛⬛⬜⬛⬜🟥")
+        print("⬛⬛⬛⬛🟦⬜⬛⬜⬛⬜⬜⬜⬜⬜⬛⬜⬛⬜🟨⬛⬛⬛⬛")
+        print("⬛⬛🟦⬜⬛⬛⬜⬜⬜⬜⬜⬛⬜⬜⬜⬜⬜⬛⬛⬜🟨⬛⬛")
+        print("🟦⬜⬛⬛⬛⬜⬜⬜⬜⬜⬛⬛⬛⬜⬜⬜⬜⬜⬛⬛⬛⬜🟨")
+        print("⬛⬛⬛⬛⬛⬜⬛⬜⬜⬛⬛⬛⬛⬛⬜⬜⬛⬜⬛⬛⬛⬛⬛")
+        print("⬜⬛⬛⬛⬛⬜⬜⬜⬜⬜⬛⬛⬛⬜⬜⬜⬜⬜⬛⬛⬛⬛⬜")
+        print("⬛🟦⬛⬛⬛⬛⬜⬜⬜⬜⬜⬛⬜⬜⬜⬜⬜⬛⬛⬛⬛🟨⬛")
+        print("⬛⬜⬛⬛⬛⬛⬛⬜⬛⬜⬜⬜⬜⬜⬛⬜⬛⬛⬛⬛⬛⬜⬛")
+        print("⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬛⬜⬜⬜⬛⬛⬛⬛⬛⬛⬛⬛")
+        print("🟦⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬛⬛⬛⬛⬛⬛⬛⬛⬛🟨")
+        print("⬜⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜")
+
 
 def remesting():
     print("Таблица лидеров: ")
@@ -650,11 +838,12 @@ def boxes():
 print("56%")
 
 
-def shops(magz, mcikl, loc1, loc2, loc3):
+def shops(magz, loc1, loc2, loc3):
     global emeralds, PBox, LBox, magpok1, magpok2, magpok3
     if magz > 5:
         magz = 0
     print("Добропожаловать в магазин!")
+    mcikl = True
     while mcikl:
         print("Что-бы выйти из магазина напишите: 'выход'")
         if magz == 0:
@@ -837,14 +1026,21 @@ def menu_list():
     if menlist == 0:
         if dorstkvazvaniy == 1:
             print(Fore.LIGHTYELLOW_EX + "'профиль','лидеры','персонажи','магазин','ящики',"
-                  "'промокоды','лига','выживание','играть'." + Style.RESET_ALL)
+                  "'промокоды','лига','игры','выживание','играть'." + Style.RESET_ALL)
         elif dorstkvazvaniy == 0:
             print(Fore.LIGHTYELLOW_EX + "'профиль','лидеры','персонажи','магазин','ящики',"
-                                        "'промокоды','лига','играть'." + Style.RESET_ALL)
+                                        "'промокоды','лига','игры','играть'." + Style.RESET_ALL)
+        else:
+            print("Если вы видете это сообщение то это значит, что произошла ошибка!"
+                  "\nНомер ошибки: 1.1")
     elif donat_stars1 == 1:
         if menlist == 1:
             print(Fore.LIGHTYELLOW_EX + "'разное', 'профиль', 'лидеры', 'персонажи', "
-                  "\n'магазин', 'ящики', 'промокоды', 'лига', 'играть', 'выживание'." + Style.RESET_ALL)
+                  "\n'магазин', 'ящики', 'промокоды', 'лига', 'играть', 'выживание',"
+                                        "\n'игры', 'крафт_боксы', 'карт_боксы'." + Style.RESET_ALL)
+        else:
+            print("Если вы видете это сообщение то это значит, что произошла ошибка!"
+                  "\nНомер ошибки: 1.1")
         # if dorstkvazvaniy == 1:
         #     print("'выживание'")
     else:
@@ -852,10 +1048,19 @@ def menu_list():
               "\nНомер ошибки: 1.1")
 
 
+print("75.3%")
+
 # Ошибки:
 # 1 - ошибки переменных
-# 1.1 - ошибка связана с переменой menlist и скорее всего у вас не отображется
-# доступные варианты действий, а это значит, что переменныя либо изменена либо с ней произошло, что то другое
+# 1.1 - ошибка связана с переменой menlist и скорее всего у вас не отображаются
+# доступные варианты действий, а это значит, что переменная либо изменена, либо с ней произошло, что то другое к
+# примеру чьё либо неграмотное вмешательство в код игры
+# 2 - ошибки непредвиденных действий или возможных событий
+# 2.1 - ошибка связана с неправильным набором данных
+# 2.2 - ошибка связана с возможной не рабочей частью кода по какой-либо причине
+# 2.3 - ошибка связана с другой возникшей ошибкой
+
+print("75.9%")
 
 
 def liga(MAXtrophei, trophei):
@@ -943,6 +1148,7 @@ def liga(MAXtrophei, trophei):
             print("Ваша ступень: Стальная V")
 
 
+
 print("80%")
 
 
@@ -962,20 +1168,567 @@ def wonekart():
 print("83%")
 
 
+def cart_box():
+    global emeralds
+    # carit = playname
+    carit = "misha"
+    cifir = 1
+    carti_list1 = [1, 0, 2, 1, 0, 0, 1, 2]
+    carti_list2 = [1, 0, 1, 2, 2, 1, 0, 3]
+    carti_list3 = [1, 3, 1, 2, 4, 2, 1, 1, 2, 3]
+    carti_list4 = [1, 4, 3, 3, 2, 3, 2, 4, 2, 2, 5]
+    carti_list5 = [2, 4, 6, 3, 5, 3, 3, 4, 3, 2, 4, 5, 5, 6]
+    carti = [0, 0, 2, 0, 3, 1, 0, 1, 1, 0, 0, 0, 2]
+    for i in carit:
+        cartii = random.choice(carti)
+        cifir += cartii
+        print("редкость награды повышена на:", cartii)
+        pyt = input()
+    print("                 ˗ˏˋ ⭐ ˎˊ˗")
+    print("Финальная редкость вашей награды составляет:", cifir)
+    print("                 ˗ˋˏ ⭐ ˊˎ˗")
+    pyt = input()
+    # макс. 16
+    if cifir <= 4:
+        cartii = random.choice(carti_list1)
+        if cartii == 0:
+            emer = cifir
+        elif cartii == 1:
+            emer = 2 * cifir
+        elif cartii == 2:
+            emer = 3 * cifir
+        emeralds = emeralds + emer
+        print("Тебе выпало:", emer, "(изумруды)")
+    elif cifir > 4 and cifir <= 9:
+        cartii = random.choice(carti_list2)
+        listovka = {0: 1, 1: 2, 2: 3, 3: 5}
+        emer = listovka[cartii] * cifir
+        emeralds = emeralds + emer
+        print("Тебе выпало:", emer, "(изумруды)")
+    elif cifir > 9 and cifir <= 12:
+        cartii = random.choice(carti_list3)
+        if cartii == 1:
+            emer = 2 * cifir
+        elif cartii == 2:
+            emer = 3 * cifir
+        elif cartii == 3:
+            emer = 5 * cifir
+        elif cartii == 4:
+            emer = 10 * cifir
+        emeralds = emeralds + emer
+        print("Тебе выпало:", emer, "(изумруды)")
+    elif cifir > 12 and cifir <= 14:
+        cartii = random.choice(carti_list4)
+        if cartii == 1:
+            emer = 2 * cifir
+        elif cartii == 2:
+            emer = 3 * cifir
+        elif cartii == 3:
+            emer = 5 * cifir
+        elif cartii == 4:
+            emer = 10 * cifir
+        elif cartii == 5:
+            emer = 30 * cifir
+        emeralds = emeralds + emer
+        print("Тебе выпало:", emer, "(изумруды)")
+    elif cifir > 14 and cifir <= 16:
+        cartii = random.choice(carti_list5)
+        if cartii == 2:
+            emer = 3 * cifir
+        elif cartii == 3:
+            emer = 5 * cifir
+        elif cartii == 4:
+            emer = 10 * cifir
+        elif cartii == 5:
+            emer = 30 * cifir
+        elif cartii == 6:
+            emer = 50 * cifir
+        emeralds = emeralds + emer
+        print("Тебе выпало:", emer, "(изумруды)")
+    print("🎉Поздравляю!🎉")
+
+
+def craft_box():
+    global emeralds, CR1Box, CR2Box, CR3Box, CR4Box, CR5Box, PBox, LBox, playname
+    CR1Box_list = [30, 50, 100, 30, 50, 50, 100, 100, 130, 200, 100, 130, 260]
+    # 360
+    CR2Box_list = [50, 100, 50, 100, 100, 100, 130, 200, 130, 200, 260, 100, 130, 260]
+    # 520 самый невыгодный
+    CR3Box_list = [1000, 500, 500, 750, 1000, 500, 500, 750, 750, 1050]
+    # 880
+    CR4Box_list = [1075, 1100, 1075, 1075, 1500, 1250, 1250, 1250, 1100]
+    # 1400
+    CR5Box_list = [1750, 2200, 2000, 2401, 2360, 2400, 2000, 3000, 2300, 2300]
+    # 2280 самый выгодный
+    print("Что вы хотите сделать? 'крафт','открыть','подробнее'.")
+    pyt = input()
+    if pyt == "подробнее" or pyt == "3":
+        print("Здесь вы можете скрафтить свой бокс!"
+              "\nПока что подробностей больше нет.")
+    elif pyt == "крафт" or pyt == "1":
+        print("Выберите действие: 'скрафтить','инструкция'")
+        pyt = input()
+        if pyt == "скрафтить" or pyt == "крафт" or pyt == "1":
+            print("пб:", PBox, "\nлб:", LBox, "\nкр1:", CR1Box, "\nкр2:", CR2Box, "\nкр3:", CR3Box, "\nкр4:", CR4Box, )
+            print("Что скрафтить? 'кр_бокс lvl1','кр_бокс lvl2','кр_бокс lvl3','кр_бокс lvl4','кр_бокс lvl5'.")
+            pyt = input()
+            if pyt == "lvl1" or pyt == "1" or pyt == "кр_бокс lvl1":
+                if PBox >= 1 and LBox >= 1:
+                    PBox -= 1
+                    LBox -= 1
+                    CR1Box += 1
+                    print("'крафт_бокс lvl1' успешно скрафчен")
+                elif PBox < 1 or LBox < 1:
+                    print("Вам нехватает ресурсов!")
+                else:
+                    print("Если вы видете это сообщение то это значит, что произошла ошибка!"
+                          "\nНомер ошибки: 2.1 \nНомер ошибки: 2.2")
+                    pyt = input()
+                    while True:
+                        print(pyt)
+                        print("krash error")
+                        print(emeralds)
+                        print(playname)
+                        print(PBox + LBox + CR4Box, LBox - PBox * CR1Box)
+            elif pyt == "lvl2" or pyt == "2" or pyt == "кр_бокс lvl2":
+                if PBox >= 1 and CR1Box >= 1:
+                    CR1Box -= 1
+                    PBox -= 1
+                    CR2Box += 1
+                    print("'крафт_бокс lvl2' успешно скрафчен")
+                elif PBox < 1 or CR1Box < 1:
+                    print("Вам нехватает ресурсов!")
+                else:
+                    print("Если вы видете это сообщение то это значит, что произошла ошибка!"
+                          "\nНомер ошибки: 2.1 \nНомер ошибки: 2.2")
+                    pyt = input()
+                    while True:
+                        print(pyt)
+                        print("krash error")
+                        print(emeralds)
+                        print(playname)
+                        print(PBox + LBox + CR2Box, LBox - PBox * CR2Box)
+            elif pyt == "lvl3" or pyt == "3" or pyt == "кр_бокс lvl3":
+                if CR2Box >= 1 and CR1Box >= 1:
+                    CR1Box -= 1
+                    CR2Box -= 1
+                    CR3Box += 1
+                    print("'крафт_бокс lvl3' успешно скрафчен")
+                elif CR2Box < 1 or CR1Box < 1:
+                    print("Вам нехватает ресурсов!")
+                else:
+                    print("Если вы видете это сообщение то это значит, что произошла ошибка!"
+                          "\nНомер ошибки: 2.1 \nНомер ошибки: 2.2")
+                    pyt = input()
+                    while True:
+                        print(pyt)
+                        print("krash error")
+                        print(emeralds)
+                        print(playname)
+                        print(PBox + LBox + CR1Box, LBox - PBox * CR3Box)
+            elif pyt == "lvl4" or pyt == "4" or pyt == "кр_бокс lvl4":
+                if CR2Box >= 1 and CR3Box >= 1:
+                    CR3Box -= 1
+                    CR2Box -= 1
+                    CR4Box += 1
+                    print("'крафт_бокс lvl4' успешно скрафчен")
+                elif CR3Box < 1 or CR2Box < 1:
+                    print("Вам нехватает ресурсов!")
+                else:
+                    print("Если вы видете это сообщение то это значит, что произошла ошибка!"
+                          "\nНомер ошибки: 2.1 \nНомер ошибки: 2.2")
+                    pyt = input()
+                    while True:
+                        print(pyt)
+                        print("krash error")
+                        print(emeralds)
+                        print(playname)
+                        print(PBox + LBox + CR1Box, LBox - PBox * CR3Box)
+            elif pyt == "lvl5" or pyt == "5" or pyt == "кр_бокс lvl5":
+                if CR4Box >= 1 and CR3Box >= 1:
+                    CR3Box -= 1
+                    CR4Box -= 1
+                    CR5Box += 1
+                    print("'крафт_бокс lvl5' успешно скрафчен")
+                elif CR3Box < 1 or CR4Box < 1:
+                    print("Вам нехватает ресурсов!")
+                else:
+                    print("Если вы видете это сообщение то это значит, что произошла ошибка!"
+                          "\nНомер ошибки: 2.1 \nНомер ошибки: 2.2")
+                    pyt = input()
+                    while True:
+                        print(pyt)
+                        print("krash error")
+                        print(emeralds)
+                        print(playname)
+                        print(PBox + LBox + CR1Box, LBox - PBox * CR3Box)
+            else:
+                print("Если вы видете это сообщение то это значит, что произошла ошибка!"
+                      "\nНомер ошибки: 2.1")
+        elif pyt == "2" or pyt == "инструкция":
+            print(Fore.GREEN + "крафт_бокс lvl1" + Style.RESET_ALL + " крафтится из 1 простого и 1 легаси боксов")
+            print(Fore.LIGHTGREEN_EX + "крафт_бокс lvl2" + Style.RESET_ALL + " крафтится из 1 простого бокса и из 1 " + Fore.GREEN + "крафт_бокса lvl1" + Style.RESET_ALL)
+            print(Fore.BLUE + "крафт_бокс lvl3" + Style.RESET_ALL + " крафтится из 1 " + Fore.LIGHTGREEN_EX + "крафт_бокса lvl2 " + Style.RESET_ALL + "и из 1 " + Fore.GREEN + "крафт_бокса lvl1" + Style.RESET_ALL)
+            print(Fore.LIGHTBLUE_EX + "крафт_бокс lvl4" + Style.RESET_ALL + " крафтится из 1 " + Fore.LIGHTGREEN_EX + "крафт_бокса lvl2 " + Style.RESET_ALL + "и из 1 " + Fore.BLUE + "крафт_бокса lvl3" + Style.RESET_ALL)
+            print(Fore.RED + "крафт_бокс lvl5" + Style.RESET_ALL + " крафтится из 1 " + Fore.LIGHTBLUE_EX + "крафт_бокса lvl4 " + Style.RESET_ALL + "и из 1 " + Fore.BLUE + "крафт_бокса lvl3" + Style.RESET_ALL)
+        else:
+            print("Если вы видете это сообщение то это значит, что произошла ошибка!"
+              "\nНомер ошибки: 2.1")
+    elif pyt == "открыть" or pyt == "2":
+        print("кр1:", CR1Box)
+        print("кр2:", CR2Box)
+        print("кр3:", CR3Box)
+        print("кр4:", CR4Box)
+        print("кр5:", CR5Box)
+        print("Что вы хотите открыть?")
+        pyt = input()
+        if pyt == "кр1" or pyt == "1":
+            if CR1Box >= 1:
+                crb = random.choice(CR1Box_list)
+            else:
+                print("Если вы видете это сообщение то это значит, что произошла ошибка!"
+                      "\nНомер ошибки: 2.1")
+                pyt = 1
+        elif pyt == "кр2" or pyt == "2":
+            if CR2Box >= 1:
+                crb = random.choice(CR2Box_list)
+            else:
+                print("Если вы видете это сообщение то это значит, что произошла ошибка!"
+                      "\nНомер ошибки: 2.1")
+                pyt = 1
+        elif pyt == "кр3" or pyt == "3":
+            if CR3Box >= 1:
+                crb = random.choice(CR3Box_list)
+            else:
+                print("Если вы видете это сообщение то это значит, что произошла ошибка!"
+                      "\nНомер ошибки: 2.1")
+                pyt = 1
+        elif pyt == "кр4" or pyt == "4":
+            if CR4Box >= 1:
+                crb = random.choice(CR4Box_list)
+            else:
+                print("Если вы видете это сообщение то это значит, что произошла ошибка!"
+                      "\nНомер ошибки: 2.1")
+                pyt = 1
+        elif pyt == "кр5" or pyt == "5":
+            if CR5Box >= 1:
+                crb = random.choice(CR5Box_list)
+            else:
+                print("Если вы видете это сообщение то это значит, что произошла ошибка!"
+                      "\nНомер ошибки: 2.1")
+                pyt = 1
+        else:
+            print("Если вы видете это сообщение то это значит, что произошла ошибка!"
+                  "\nНомер ошибки: 2.2")
+            pyt = 1
+        if pyt != 1:
+            emeralds += crb
+            print("Вам выпало:", crb, "(изумрудов)")
+        else:
+            print("Ошибка [Не волнуйтесь эта ошибка вызвана другой ошибкой ;)][поэтому у этой ошибки нету номера]"
+                  "\nНомер ошибки: 2.3")
+    else:
+        print("Если вы видете это сообщение то это значит, что произошла ошибка!"
+              "\nНомер ошибки: 2.1 \nНомер ошибки: 2.2")
+
+
+print("90.8%")
+
+
 def name_simvl(playname, nam_sim):
     b = nam_sim
     nam_sim = len(playname)
     return nam_sim
 
 
-print("84%")
+print("91%")
 
 
 def clear():
     return os.system('cls')
 
 
-print("84.4%")
+print("91.3%")
+
+
+def vu():
+    pralfa = Back.WHITE + Fore.BLACK + "Преальфа" + Style.RESET_ALL
+    alfa = Fore.RED + "Альфа" + Style.RESET_ALL
+    beta = Fore.YELLOW + "Бета" + Style.RESET_ALL
+    prrelis = Fore.GREEN + "Пререлиз" + Style.RESET_ALL
+    relis = Fore.LIGHTGREEN_EX + "Релиз" + Style.RESET_ALL
+    monetiz = Back.LIGHTBLACK_EX + Fore.LIGHTYELLOW_EX + "Монетизированая" + Style.RESET_ALL
+    print("Дополнительные игры: 1 (" + pralfa + ")VPU-помощник для выбора покупки одной из двух игр."
+          "\n                     2 (" + pralfa + ")Pic-игра в которой вам предстоит рисовать картины спомощью цифр на разных сложностях."
+          "\n                                   Конец списка!")
+    vbr = input()
+    if vbr == "ugrtt":
+        print(pralfa)
+        print(alfa)
+        print(beta)
+        print(prrelis)
+        print(relis)
+        print(monetiz)
+    if vbr == "VPU" or vbr == "1":
+        vpu()
+    elif vbr == "Pic" or vbr == "2":
+        pic()
+
+
+print("91.6%")
+
+
+def vpu():
+    print("Добро пожаловать в помощник выбора игры для покупки.")
+    print("Он поможет вам выбрать одну из двух игр которые вы хотите купить, но если хватает только на одную.")
+    print("На вопросы можно твечать только да или нет.")
+    u1b = 5
+    u2b = 5
+    ub = [0]
+    u1 = input("Введите название первой игры: ")
+    u2 = input("Введите название второй игры: ")
+    print("Вопрос номер №1| Вам нравится игра:", u1, "?")
+    otv = input()
+    if otv == "да":
+        u1b += 1
+    print("Вопрос номер №2| Вам нравится игра:", u2, "?")
+    otv = input()
+    if otv == "да":
+        u2b += 1
+    print("Вопрос номер №3| В игре:", u1, "есть мультиплеер?")
+    otv = input()
+    if otv == "да":
+        u1b += 2
+    elif otv == "нет":
+        u1b -= 1
+    print("Вопрос номер №4| В игре:", u2, "есть мультиплеер?")
+    otv = input()
+    if otv == "да":
+        u2b += 2
+    elif otv == "нет":
+        u2b -= 1
+    print("Вопрос номер №5| В игре:", u1, "присутствует больше одного режима игры?")
+    otv = input()
+    if otv == "да":
+        u1b += 1
+    elif otv == "нет":
+        u1b -= 1
+    print("Вопрос номер №6| В игре:", u2, "присутствует больше одного режима игры?")
+    otv = input()
+    if otv == "да":
+        u2b += 1
+    elif otv == "нет":
+        u2b -= 1
+    print("Вопрос номер №7| О игре:", u1, "много хороших отзывов?")
+    otv = input()
+    if otv == "да":
+        u1b += 1
+    elif otv == "нет":
+        u1b -= 0
+    print("Вопрос номер №8| О игре:", u2, "много хороших отзывов?")
+    otv = input()
+    if otv == "да":
+        u2b += 1
+    elif otv == "нет":
+        u2b -= 0
+    stopen = True
+    while stopen:
+        ub.append(1)
+        u1b -= 1
+        if u1b == 0:
+            stopen = False
+    stopen = True
+    while stopen:
+        ub.append(2)
+        u2b -= 1
+        if u2b == 0:
+            stopen = False
+    otv = random.choice(ub)
+    print("Помощник сделал выбор и выбрал:")
+    if otv == 1:
+        print(u1)
+    elif otv == 2:
+        print(u2)
+    else:
+        print("Ничего не выбирать.")
+
+
+print("92%")
+
+
+def clorcr(crtnsc, crtns, calorgreen, calorbrown, calorblue, calororange, caloryellow, calorred, calorviolet, calorblack, calorwhite, calornon):
+    crtnsc = ""
+    for i in crtns:
+        if i == calorgreen:
+            crtnsc += "🟩"
+        elif i == calorbrown:
+            crtnsc += "🟫"
+        elif i == calorblue:
+            crtnsc += "🟦"
+        elif i == calororange:
+            crtnsc += "🟧"
+        elif i == caloryellow:
+            crtnsc += "🟨"
+        elif i == calorred:
+            crtnsc += "🟥"
+        elif i == calorviolet:
+            crtnsc += "🟪"
+        elif i == calorblack:
+            crtnsc += "⬛"
+        elif i == calorwhite:
+            crtnsc += "⬜"
+        elif i == calornon:
+            crtnsc += "🏻"
+        elif i == "/":
+            crtnsc += "\n"
+    return crtnsc
+
+
+# print("🟩-1\n🟫-2\n🟦-3\n🟧-4\n🟨-5\n🟥-6\n🟪-7\n⬛-8\n⬜-9")
+    # calorgreen = "1"
+    # calorbrown = "2"
+    # calorblue = "3"
+    # calororange = "4"
+    # caloryellow = "5"
+    # calorred = "6"
+    # calorviolet = "7"
+    # calorblack = "8"
+    # calorwhite = "9"
+
+
+def clorcar(crtn, calorgreen, calorbrown, calorblue, calororange, caloryellow, calorred, calorviolet, calorblack, calorwhite, calornon):
+    crtn = ""
+    cartin = input()
+    for i in cartin:
+        if i == calorgreen:
+            crtn += "🟩"
+        elif i == calorbrown:
+            crtn += "🟫"
+        elif i == calorblue:
+            crtn += "🟦"
+        elif i == calororange:
+            crtn += "🟧"
+        elif i == caloryellow:
+            crtn += "🟨"
+        elif i == calorred:
+            crtn += "🟥"
+        elif i == calorviolet:
+            crtn += "🟪"
+        elif i == calorblack:
+            crtn += "⬛"
+        elif i == calorwhite:
+            crtn += "⬜"
+        elif i == calornon:
+            crtn += "🏻"
+        elif i == "/":
+            crtn += "\n"
+    return crtn
+
+
+def picobyh(crtnsc, crtn):
+    print("Ваша задача нарисовать цифрами картину в точности как показаная вот пример:")
+    print("🟩🟩🟩🟩🟩             11111")
+    print("🟩🟩🟫🟩🟩             11211")
+    print("🟩🟩🟫🟩🟩             11211")
+    print("🟦🟩🟫🟩🟦             31212")
+    print("🟦🟦🟫🟦🟦             33133")
+    print("Или же вот так:")
+    print("🟩🟩🟩🟩🟩             11111/11211/11211/31213/33133")
+    print("🟩🟩🟫🟩🟩")
+    print("🟩🟩🟫🟩🟩")
+    print("🟦🟩🟫🟩🟦")
+    print("🟦🟦🟫🟦🟦")
+    print("В начале каждого уровня будет высвечиваться табло обозначающее привязку цветовых кубов к цифре:")
+    print("🟩-1\n🟫-2\n🟦-3")
+    print("В зависимости от сложности оно будет менятся,"
+          " также в зависимости от сложности будут и другие препятствия")
+    print("Чтобы разделить цифры пишите: /")
+    print("А теперь попробуйте сами:")
+    print("🟩-1\n🟫-2\n🟦-3")
+    calorgreen = "1"
+    calorbrown = "2"
+    calorblue = "3"
+    calororange = "4"
+    caloryellow = "5"
+    calorred = "6"
+    calorviolet = "7"
+    calorblack = "8"
+    calorwhite = "9"
+    calornon = "0"
+    crtns = "31113/11111/11211/33233/33233"
+    crtnsc = clorcr(crtnsc, crtns, calorgreen, calorbrown, calorblue, calororange, caloryellow, calorred, calorviolet,
+                    calorblack, calorwhite, calornon)
+    print(crtnsc)
+    crtn = clorcar(crtn, calorgreen, calorbrown, calorblue, calororange, caloryellow, calorred, calorviolet, calorblack,
+                   calorwhite, calornon)
+    print("Что получилось у вас:")
+    print(crtn)
+    if crtn == crtnsc:
+        print("Поздравляю!"
+              "\nВы успешно прошли обучение в игре Pic!")
+        crtns = "5888885/5885885/6585856/5553555/5555555"
+        crtnsc = clorcr(crtnsc, crtns, calorgreen, calorbrown, calorblue, calororange, caloryellow, calorred,
+                        calorviolet,
+                        calorblack, calorwhite, calornon)
+        print(crtnsc)
+    else:
+        print("Поздравляю."
+              "\nВы успешно завалили обучение:("
+              "\nНежелаете ли вы пройти его ещё раз?")
+        vbr = input()
+        daaa = ["да", "д", "Да", "ДА", "дА", "а", "А", "Д"]
+        if vbr in daaa:
+            print("Хорошо! :)")
+            picobyh(crtnsc, crtn)
+        else:
+            print("ОКей(")
+            return
+    # print("Что должно было получиться:")
+    # print(crtnsc)
+
+
+def pic():
+    print("Выберите сложность: обучение, творческая, легкая, средняя, сложная, невозможная, безумная.")
+    # print("🟩-1\n🟫-2\n🟦-3\n🟧-4\n🟨-5\n🟥-6\n🟪-7\n⬛-8\n⬜-9\n🏻-0")
+    # calorgreen = "1"
+    # calorbrown = "2"
+    # calorblue = "3"
+    # calororange = "4"
+    # caloryellow = "5"
+    # calorred = "6"
+    # calorviolet = "7"
+    # calorblack = "8"
+    # calorwhite = "9"
+    # calornon = "0"
+
+    crtn = ""
+    crtns = ""
+    crtnsc = ""
+    vbr = input()
+    if vbr == "обучение" or vbr == "1":
+        picobyh(crtnsc, crtn)
+    elif vbr == "творческая" or vbr == "2":
+        print("Добропожаловать в творческий режим здесь вы можете создавать что угодно!"
+              "\n От непойми чего до произведений искуства, но только цифрами!")
+        print("🟩-1\n🟫-2\n🟦-3\n🟧-4\n🟨-5\n🟥-6\n🟪-7\n⬛-8\n⬜-9\n🏻-0")
+        calorgreen = "1"
+        calorbrown = "2"
+        calorblue = "3"
+        calororange = "4"
+        caloryellow = "5"
+        calorred = "6"
+        calorviolet = "7"
+        calorblack = "8"
+        calorwhite = "9"
+        calornon = "0"
+        crtn = clorcar(crtn, calorgreen, calorbrown, calorblue, calororange, caloryellow, calorred, calorviolet,
+                       calorblack, calorwhite, calornon)
+        print("Ваше произведение искуства:")
+        print(crtn)
+    crtns = "33333/31113/31213/33233/11111"
+
+
+
 print(Fore.WHITE + "Welcome to " + Fore.LIGHTWHITE_EX + "Cloudcore" + Style.RESET_ALL)
 print(" version:", version)
 # if omer == 1:
@@ -1034,7 +1787,9 @@ if signature == "mi97-98lo-g011-rim6":
             playname = input("Введите свой никнейм:")
             nam_sim = name_simvl(playname, nam_sim)
             if nam_sim >= 3 and nam_sim <= 12:
-                namnem += 1
+                print(poldeptopF)
+                poldeptopF["namnem"] += 1
+                save()
                 name_reg = False
             elif nam_sim <= 2:
                 print("Ваше имя пользователя недопустимо!"
@@ -1049,36 +1804,43 @@ if signature == "mi97-98lo-g011-rim6":
                                                          " 3 символов!")
                 print("Так что пожалуйста введите имя пользователя заново")
     while True:
-        mcikl = True
-        lives = pervonahallives
-        Weapon = pervonahalWeapon
+        poldeptopF["mcikl"] = True
+        poldeptopF["lives"] = pervonahallives
+        poldeptopF["Weapon"] = pervonahalWeapon
+        save()
         if trophei >= 550:
             if yrprof >= 20:
-                if dorstkvazvaniy != dorstkvazvaniy:
-                    dorstkvazvaniy = 1
+                if dorstkvazvaniy != 1:
+                    poldeptopF["dorstkvazvaniy"] = 1
+                    save()
                     print("🗡️Теперь вам доступно выживание!🗡️")
         if yrproff >= 1:
-            yrproff -= 1
-            yrprof += 1
+            poldeptopF["yrproff"] -= 1
+            poldeptopF["yrprof"] += 1
             print("\n" + Back.LIGHTBLUE_EX + "\n" + Style.RESET_ALL +
-                Fore.LIGHTBLUE_EX + "🆙Уровень повышен!🆙" + Style.RESET_ALL +
+                  Fore.LIGHTBLUE_EX + "🆙Уровень повышен!🆙" + Style.RESET_ALL +
                   "\n" + Back.LIGHTBLUE_EX + "\n" + Style.RESET_ALL)
         if mtik1 < 1:
-            mtik10 -= 5
+            poldeptopF["mtik10"] -= 5
+            save()
         if mtik1 <= 0:
-            mtik1 = 10
+            poldeptopF["mtik1"] = 10
+            save()
             if mtik10 <= 0:
-                mtik10 = 10
-                # magz += 1
+                poldeptopF["mtik10"] = 10
+                # poldeptopF["magz"] += 1
+                save()
         if trophei == trophei:
             if trophei < 0:
-                trophei = 0
+                poldeptopF["trophei"] = 0
+                save()
             elif trophei > MAXtrophei:
                 MAXtrophei = trophei
         print("Ваши изумруды: " + Fore.LIGHTGREEN_EX + "❇️", emeralds, "❇️" + Style.RESET_ALL)
         menu_list()
 
         menu = input()
+
         if menu == "/akvadevida":
             if ADMINPRAV == 0:
                 ADMINPRAV += 9896
@@ -1087,10 +1849,19 @@ if signature == "mi97-98lo-g011-rim6":
         elif menu == "персонажи":
             person(lives, Weapon)
         elif menu == "магазин":
-            shops(magz, mcikl, loc1, loc2, loc3)
+            shops(magz, loc1, loc2, loc3)
         elif menu == "лига":
             liga(MAXtrophei, trophei)
-
+        elif menu == "карт_боксы":
+            if donat_stars1 == 1:
+                cart_box()
+        elif menu == "крафт_боксы":
+            if donat_stars1 == 1:
+                craft_box()
+            else:
+                print("Извините, но это примиальная функция.")
+        elif menu == "игры":
+            vu()
         elif menu == "ящики":
             boxes()
         elif menu == "промокоды":
@@ -1143,14 +1914,19 @@ if signature == "mi97-98lo-g011-rim6":
                     print(kode_mini_plysh)
                 elif comd == "/em add":
                     comdi = int(comandexpi[8:])
-                    emeralds += comdi
+                    poldeptopF["emeralds"] += comdi
+                    save()
                 elif comd == "/em set":
                     comdi = int(comandexpi[8:])
                     emeralds = comdi
+                    poldeptopF["emeralds"] = comdi
+                    save()
                 comd = comandexpi[0:8]
                 if comd == "/em dell":
                     comdi = int(comandexpi[9:])
                     emeralds -= comdi
+                    poldeptopF["emeralds"] -= comdi
+                    save()
                 # elif comandexpi == "/em set 5":
                 #     emeralds = 5
                 # elif comandexpi == "/em set 7":
@@ -1212,15 +1988,20 @@ if signature == "mi97-98lo-g011-rim6":
                 # elif comandexpi == "/em dell 5000":
                 #     emeralds -= 5000
                 elif comandexpi == "/lbox":
-                    LBox += int(input("Введите количество для добавления: "))
+                    poldeptopF["LBox"] = int(input("Введите количество для добавления: "))
+                    save()
                 elif comandexpi == "/pbox":
-                    PBox += int(input("Введите количество для добавления: "))
+                    poldeptopF["PBox"] = int(input("Введите количество для добавления: "))
+                    save()
                 elif comandexpi == "/yp":
-                    yrprof += int(input("Введите количество для добавления: "))
+                    poldeptopF["yrprof"] = int(input("Введите количество для добавления: "))
+                    save()
                 elif comandexpi == "/trof":
-                    trophei += int(input("Введите количество для добавления: "))
+                    poldeptopF["trophei"] = int(input("Введите количество для добавления: "))
+                    save()
                 elif comandexpi == "/nam":
-                    playname = input("Введите новое имя: ")
+                    poldeptopF["playname"] = input("Введите новое имя: ")
+                    save()
         elif menu == "профиль":
             print("       Ваш никнейм:", playname)
             print("Ваше количество изумрудов: " + Fore.LIGHTGREEN_EX + "❇️", emeralds, "❇️" + Style.RESET_ALL)
@@ -1251,6 +2032,7 @@ if signature == "mi97-98lo-g011-rim6":
                 print("🟦-это ваша точка спавна")
                 codrdinite = 6
                 vsnpc = 1
+                mcikl = True
                 while mcikl:
                     clear()
                     if vsnpc != 0:
@@ -1274,7 +2056,7 @@ if signature == "mi97-98lo-g011-rim6":
                         print("Ваша награда: 1 легаси ящик")
                         print("              + " + Fore.LIGHTYELLOW_EX + "2 " + Style.RESET_ALL + "трофея")
                         trophei += 2
-                        yrproff += 0.6
+                        yrproff += 0.3
                         LBox += 1
                         mtik1 -= 5
                         mcikl = False

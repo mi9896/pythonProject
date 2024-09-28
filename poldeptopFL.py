@@ -1,6 +1,14 @@
 import json
 
+poldeptopFF = {}
+
 poldeptopF = {}
+
+
+def loadj():
+    global poldeptopFF
+    with open("poldeptopFF.json", "r", encoding="utf-8") as f:
+        poldeptopFF = json.load(f)
 
 
 def load():
@@ -15,7 +23,24 @@ def save():
         json.dump(poldeptopF, nocayt)
 
 
+loadj()
 load()
+print(poldeptopF, "В файле загрузки")
+namen = input("Введите код с обратной стороны вашей карточки: ")
+users_jonson = poldeptopFF["users"]
+for i in users_jonson:
+    if i["nicname"] == namen:
+        print("Совпадение найдено!")
+        print(i["data"])
+        print(i["nicname"])
+        poldeptopF = i["data"]
+        break
+else:
+    print("Совпадение не найдено!"
+        "\n Хотите создать новое сохранение?")
+
+# print(poldeptopFF["users"][0])
+
 
 
 em1 = poldeptopF.get("em1", 234098)
@@ -76,7 +101,11 @@ trenerigr = poldeptopF.get("trenerigr", 1)
 # Игра нетолько на обучении = 0
 # Игра нетолько на обучении = 0
 
-
+money = poldeptopF.get("money", 10)
+power = poldeptopF.get("power", 20)
+heals = poldeptopF.get("heals", 20)
+predypr = poldeptopF.get("predypr", 0)
+error = poldeptopF.get("error", 0)
 yrprod = poldeptopF.get("yrprod", 0)
 lives11 = poldeptopF.get("lives11", 8)
 lives12 = poldeptopF.get("lives12", 20)
@@ -137,6 +166,14 @@ menu = poldeptopF.get("menu", "")
 comandexpi = poldeptopF.get("comandexpi", "")
 sobp = ""
 menlist = poldeptopF.get("menlist", 0)
+forli = poldeptopF.get("forli", 0)
+forli_non = ""
+
+CR1Box = poldeptopF.get("CR1Box", 0)
+CR2Box = poldeptopF.get("CR2Box", 0)
+CR3Box = poldeptopF.get("CR3Box", 0)
+CR4Box = poldeptopF.get("CR4Box", 0)
+CR5Box = poldeptopF.get("CR5Box", 0)
 
 
 # ограниченое количество символов имени
@@ -193,7 +230,7 @@ go_player_minimap_ob_st8 = poldeptopF.get("go_player_minimap_ob_st8", "")
 free23 = poldeptopF.get("free23", 0)
 HALVA_VC = poldeptopF.get("HALVA_VC", 0)
 lapota = poldeptopF.get("lapota", 0)
-version = poldeptopF.get("version", "1.7.2-A")
+version = poldeptopF.get("version", "2.0.2-A")
 # free23
 # HALVA_VC
 # lapota
